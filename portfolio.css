@@ -1,0 +1,721 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --col-b: #000000;
+  --text-color: #212121;
+  --background-color: #2f303a;
+  --button-color: #2196f3;
+  --colr: #ffffff;
+  --two-colr: #757575;
+  --team-color: #f5f4fa;
+  --icon-feel: #afb1b8;
+  --text-absolute: rgba(47, 48, 58, 0.8);
+  --text-area: rgba(117, 117, 117, 0.5);
+  --modal-black: rgba(33, 33, 33, 0.2);
+  --button-modal: rgba(0, 0, 0, 0.1);
+  --backdrop: rgba(0, 0, 0, 0.2);
+  --social-netw-foot: rgba(255, 255, 255, 0.1);
+  --email-footer: rgba(255, 255, 255, 0.6);
+  --d-input-footer: rgba(255, 255, 255, 0.3);
+  --button-1: rgba(0, 0, 0, 0.3);
+  --shadow-but-modal: rgba(0, 0, 0, 0.15);
+  --card-portfolio-color: rgba(33, 150, 243, 0.9);
+}
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: auto;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--two-colr);
+
+  text-decoration: none;
+}
+h4 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--text-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--color-b);
+}
+.Web {
+  color: var(--button-color);
+}
+.line {
+  border: 1px solid var(--border-2);
+  height: 0px;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+}
+.navigation {
+  display: flex;
+  gap: 50px;
+}
+.nav-item:nth-child(2) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--button-color);
+  position: relative;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-item:nth-child(2) a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.25s linear, transform 0.25s linear;
+}
+.nav-item:nth-child(1) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--text-color);
+  position: relative;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-item:nth-child(1) a:hover {
+  color: var(--button-color);
+}
+.nav-item:nth-child(1) a::after {
+  color: var(--button-color);
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s linear, transform 0.25s linear;
+}
+.nav-item:nth-child(1) a:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.nav-item:nth-child(3) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--text-color);
+  position: relative;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-item:nth-child(3) a:hover {
+  color: var(--button-color);
+}
+.nav-item:nth-child(3) a::after {
+  color: var(--button-color);
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s linear, transform 0.25s linear;
+}
+.nav-item:nth-child(3) a:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.gmail-number {
+  display: flex;
+  gap: 50px;
+}
+.gmail-head > a:hover,
+.gmail-head > a:focus {
+  color: var(--button-color);
+}
+.header-icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--two-colr);
+  margin-right: 10px;
+  margin-left: 0;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: var(--two-colr);
+  margin-right: 10px;
+  margin-left: 0;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-email-phone {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--two-colr);
+  border: none;
+  background-color: var(--colr);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-email-phone:hover {
+  color: var(--button-color);
+}
+.header-email-phone:hover .header-icon-envelope {
+  fill: var(--button-color);
+}
+.header-email-phone:hover .header-icon-phone {
+  fill: var(--button-color);
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.button1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 73px;
+  height: 38px;
+  padding: 6px 25px 6px 25px;
+  margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 125px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 112px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 103px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 130px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-button > li > button:hover,
+.nav-button > li > button:focus {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: var(--button-color);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colr);
+}
+.all-project {
+  margin-bottom: 94px;
+}
+.project-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.project-nav > li {
+  cursor: pointer;
+  height: 404px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-nav > li:hover,
+.project-nav > li:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: var(--colr);
+  border: 1px solid var(--border-color);
+}
+.project-nav > li > div > p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--two-colr);
+}
+.project-nav > li > img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-card {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--colr);
+  background-color: var(--card-portfolio-color);
+  padding: 63px 24px;
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-nav > li:hover .overlay-card,
+.project-nav > li:focus .overlay-card {
+  transform: translateY(0);
+}
+.text-project {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--colr);
+  position: inherit;
+}
+.social-networks-team {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.container-social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.container-social-networks:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--button-color);
+}
+.container-social-networks:hover .social-networks-team-icon {
+  fill: var(--colr);
+}
+.icon-team-a {
+  display: flex;
+}
+.social-networks-team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-feel);
+}
+/*footer*/
+.footer {
+  display: flex;
+  width: 100%;
+  height: 252px;
+  padding: 60px 215px;
+  margin-top: 0;
+  background-color: var(--background-color);
+}
+.logo-foot {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--colr);
+  margin-bottom: 20px;
+}
+.web-foot {
+  color: var(--button-color);
+}
+.div-contact-logo {
+  display: flex;
+}
+.div-contact-logo p {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3%;
+  line-height: 1.7;
+  letter-spacing: 3%;
+  color: var(--colr);
+}
+.div-contact-logo .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-right: 93px;
+  gap: 9px;
+}
+.contact > li {
+  width: 231px;
+}
+.social-networks-footer {
+  margin-right: 93px;
+}
+.social-networks-footer .container-social-networks {
+  background-color: var(--social-netw-foot);
+  border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-networks-footer .container-social-networks:hover {
+  background-color: var(--button-color);
+}
+.social-networks-footer h4 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colr);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.social-networks-footer .social-networks-team-icon {
+  fill: var(--colr);
+}
+.newsletter {
+  margin-right: 12px;
+}
+.d-newsletter-input {
+  display: flex;
+}
+.newsletter h4 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colr);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.d-inp-footer {
+  border: 1px solid var(--d-input-footer);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+.input-foot {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: var(--email-footer);
+}
+.button-subscribe-foot {
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  background: var(--button-color);
+  border: none;
+  box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--colr);
+  padding-left: 28px;
+}
+.svg-but-foot {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+/*footer*/
+/*modal*/
+.backdrop {
+  background-color: var(--backdrop);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+.modal {
+  position: absolute;
+  background-color: var(--colr);
+  padding: 40px;
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.butt-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--colr);
+  border: 1px solid var(--button-modal);
+}
+.butt-modal:hover use {
+  fill: var(--button-color);
+}
+.d-butmodal {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.title-modal {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.form-modal label {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--two-colr);
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-bottom: 4px;
+}
+.modal-label {
+  display: block;
+}
+.d-input {
+  display: block;
+  position: relative;
+  align-items: center;
+  height: 40px;
+  border: 1px solid var(--modal-black);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 11px 10px 11px 42px;
+}
+.svg-inp {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  fill: var(--col-b);
+}
+.inp-modal {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.d-input:focus-within {
+  border: 1px solid var(--button-color);
+}
+.d-input:focus-within svg {
+  fill: var(--button-color);
+}
+.area-label {
+  display: block;
+}
+.modal-area {
+  display: block;
+  border: 1px solid var(--modal-black);
+  outline: none;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--text-area);
+}
+.modal-area:focus {
+  border: 1px solid var(--button-color);
+}
+.conditions-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.check-modal {
+  accent-color: var(--button-color);
+}
+.conditions {
+  color: var(--button-color);
+  border-bottom: 1px solid var(--button-color);
+}
+.butt-conf-modald {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-modal {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--colr);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  background: var(--button-color);
+  border: none;
+}
+/*modal*/

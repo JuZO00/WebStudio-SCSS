@@ -1,0 +1,17 @@
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--color-b);
+}
+.Web {
+  color: var(--button-color);
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+}

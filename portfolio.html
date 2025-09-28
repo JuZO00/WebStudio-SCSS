@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-nav">
+        <a href="./index.html" class="logo"
+          ><span class="Web">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="./index.html">Студія</a></li>
+            <li class="nav-item"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-item"><a href="#footer">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="gmail-number">
+        <li class="gmail-head">
+          <a href="info@devstudio.com" class="header-email-phone">
+            <svg class="header-icon-envelope">
+              <use href="./img/header/symbol-defs.svg#icon-envelope"></use></svg
+            >info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a href="+380961111111" class="header-email-phone"
+            ><svg class="header-icon-phone">
+              <use
+                href="./img/header/symbol-defs.svg#icon-smartphone"
+              ></use></svg
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="line"></div>
+    <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="d-butmodal">
+            <button type="button" class="butt-modal" data-modal-close>
+              <svg
+                style="width: 11px; height: 11px; fill: #000"
+                class="svg-modal"
+              >
+                <use href="./img/modal/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </button>
+          </div>
+          <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+          <form action="" class="form-modal">
+            <label for="" class="modal-label">Ім'я</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-people"></use>
+              </svg>
+              <input type="name" required class="inp-modal inp-style" />
+            </div>
+            <label for="" class="modal-label">Телефон</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <input type="name" required class="inp-modal" />
+            </div>
+            <label for="" class="modal-label">Пошта</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <input type="email" required class="inp-modal inp-style" />
+            </div>
+            <label for="" class="area-label">Коментар</label
+            ><textarea
+              name=""
+              id=""
+              class="modal-area"
+              placeholder="Введіть текст"
+            ></textarea>
+            <div class="conditions-full">
+              <input type="checkbox" required class="check-modal" />
+              <p>
+                Погоджуюся з розсилкою та приймаю
+                <span><a href="" class="conditions">Умови договору</a></span>
+              </p>
+            </div>
+            <div class="butt-conf-modald">
+              <button class="confirm-modal" type="button">Відправити</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="div-button container">
+        <ul class="nav-button">
+          <li>
+            <button type="button" class="button1">Усі</button>
+          </li>
+          <li>
+            <button type="button" class="button2">Веб-сайти</button>
+          </li>
+          <li>
+            <button type="button" class="button3">Додатки</button>
+          </li>
+          <li>
+            <button type="button" class="button4">Дизайн</button>
+          </li>
+          <li>
+            <button type="button" class="button5">Маркетинг</button>
+          </li>
+        </ul>
+      </div>
+      <section class="all-project container">
+        <ul class="project-nav container">
+          <li>
+            <img src="./imgp/imgsq.jpg" alt="Технокряк" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+            <div class="text-project">
+              <h4>Технокряк</h4>
+              <p>Веб-сайт</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./imgp/img-1sq.jpg"
+              alt="Постер New Orlean vs Golden Star"
+            />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Постер New Orlean vs Golden Star</h4>
+              <p>Дизайн</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-2sq.jpg" alt="Ресторан Seafood" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Ресторан Seafood</h4>
+              <p>Додаток</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-3sq.jpg" alt="Проєкт Prime" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Проєкт Prime</h4>
+              <p>Маркетинг</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-4sq.jpg" alt="Проєкт Boxes" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Проєкт Boxes</h4>
+              <p>Додаток</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-5sq.jpg" alt="Inspiration has no Borders" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Inspiration has no Borders</h4>
+              <p>Веб-сайт</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-6sq.jpg" alt="Видання Limited Edition" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Видання Limited Edition</h4>
+              <p>Дизайн</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-7sq.jpg" alt="Проєкт LAB" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Проєкт LAB</h4>
+              <p>Маркетинг</p>
+            </div>
+          </li>
+          <li>
+            <img src="./imgp/img-8sq.jpg" alt="Growing Business" />
+            <p class="overlay-card">
+              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+              та сервісів. Все це дозволить відвідувачу отримати вичерпні
+              відомості про компанію чи приватну особу.
+            </p>
+
+            <div class="text-project">
+              <h4>Growing Business</h4>
+              <p>Додаток</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container" id="footer">
+      <div class="div-contact-logo container">
+        <div class="contacts">
+          <a href="./index.html" class="logo-foot"
+            ><span class="web-foot">Web</span>Studio</a
+          >
+          <ul class="contact">
+            <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+            <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="social-networks-footer">
+          <h4>приєднуйтесь</h4>
+          <div class="social-networks-team">
+            <div class="container-social-networks">
+              <svg class="social-networks-team-icon">
+                <use href="./img/our team/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </div>
+            <div class="container-social-networks">
+              <svg class="social-networks-team-icon">
+                <use href="./img/our team/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </div>
+            <div class="container-social-networks">
+              <svg class="social-networks-team-icon">
+                <use href="./img/our team/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </div>
+            <div class="container-social-networks">
+              <svg class="social-networks-team-icon">
+                <use href="./img/our team/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter container">
+          <h4>Підпишіться на розсилку</h4>
+          <div class="d-newsletter-input">
+            <div class="d-inp-footer">
+              <input type="email" placeholder="E-mail" class="input-foot" />
+            </div>
+            <button type="button" class="button-subscribe-foot">
+              Підписатися
+              <svg class="svg-but-foot" style="width: 24px; height: 24px">
+                <use href="./img/icon send.svg"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./modal.js"></script>
+  </body>
+</html>

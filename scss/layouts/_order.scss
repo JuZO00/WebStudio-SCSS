@@ -1,0 +1,28 @@
+.order-service {
+  height: 600px;
+  padding: 200px 452px;
+  margin-bottom: 119px;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./img/background\ png\ sq.jpg);
+}
+.button-1 {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 216px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 6%;
+  line-height: 1.8;
+  background-color: var(--button-color);
+  color: var(--colr);
+  box-shadow: 0px 3px 5px var(--button-1);
+  border: none;
+  border-radius: 4px;
+}

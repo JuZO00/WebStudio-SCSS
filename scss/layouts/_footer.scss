@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  width: 100%;
+  height: 252px;
+  padding: 60px 215px;
+  margin-top: 0;
+  background-color: var(--background-color);
+}
+.div-contact-logo {
+  display: flex;
+}
+.div-contact-logo p {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3%;
+  line-height: 1.7;
+  letter-spacing: 3%;
+  color: var(--colr);
+}
+.div-contact-logo .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-right: 93px;
+  gap: 9px;
+}
+.contact > li {
+  width: 231px;
+}
+.social-networks-footer {
+  margin-right: 93px;
+}
+.social-networks-footer .container-social-networks {
+  background-color: var(--social-netw-foot);
+  border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-networks-footer .container-social-networks:hover {
+  background-color: var(--button-color);
+}
+.social-networks-footer .social-networks-team-icon {
+  fill: var(--colr);
+}
+.newsletter {
+  margin-right: 12px;
+}
+.d-newsletter-input {
+  display: flex;
+}
+.newsletter h4 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colr);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.d-inp-footer {
+  border: 1px solid var(--d-input-footer);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+.input-foot {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: var(--email-footer);
+}
+.button-subscribe-foot {
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  background: var(--button-color);
+  border: none;
+  box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--colr);
+  padding-left: 28px;
+}
+.svg-but-foot {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}

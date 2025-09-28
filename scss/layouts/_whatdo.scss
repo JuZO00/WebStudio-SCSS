@@ -1,0 +1,25 @@
+.what-we-do {
+  margin-top: 0;
+  margin-bottom: 188px;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 188px;
+}
+.img-wd-item {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+.text-what-wd {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--text-absolute);
+  width: 100%;
+  height: 70px;
+  padding: 27px 95px;
+}
