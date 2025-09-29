@@ -14,7 +14,7 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--button-color);
+  color: $button-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -22,7 +22,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -37,19 +37,19 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item:nth-child(2) a:hover {
-  color: var(--button-color);
+  color: $button-color;
 }
 .nav-item:nth-child(2) a::after {
-  color: var(--button-color);
+  color: $button-color;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -68,19 +68,19 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item:nth-child(3) a:hover {
-  color: var(--button-color);
+  color: $button-color;
 }
 .nav-item:nth-child(3) a::after {
-  color: var(--button-color);
+  color: $button-color;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -100,12 +100,12 @@
 }
 .gmail-head > a:hover,
 .gmail-head > a:focus {
-  color: var(--button-color);
+  color: $button-color;
 }
 .header-icon-envelope {
   width: 16px;
   height: 12px;
-  fill: var(--two-colr);
+  fill: $two-colr;
   margin-right: 10px;
   margin-left: 0;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -113,7 +113,7 @@
 .header-icon-phone {
   width: 10px;
   height: 16px;
-  fill: var(--two-colr);
+  fill: $two-colr;
   margin-right: 10px;
   margin-left: 0;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,17 +124,17 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--two-colr);
+  color: $two-colr;
   border: none;
-  background-color: var(--colr);
+  background-color: $colr;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-email-phone:hover {
-  color: var(--button-color);
+  color: $button-color;
 }
 .header-email-phone:hover .header-icon-envelope {
-  fill: var(--button-color);
+  fill: $button-color;
 }
 .header-email-phone:hover .header-icon-phone {
-  fill: var(--button-color);
+  fill: $button-color;
 }

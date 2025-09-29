@@ -1,25 +1,3 @@
-:root {
-  --col-b: #000000;
-  --text-color: #212121;
-  --background-color: #2f303a;
-  --button-color: #2196f3;
-  --colr: #ffffff;
-  --two-colr: #757575;
-  --team-color: #f5f4fa;
-  --icon-feel: #afb1b8;
-  --text-absolute: rgba(47, 48, 58, 0.8);
-  --text-area: rgba(117, 117, 117, 0.5);
-  --modal-black: rgba(33, 33, 33, 0.2);
-  --button-modal: rgba(0, 0, 0, 0.1);
-  --backdrop: rgba(0, 0, 0, 0.2);
-  --social-netw-foot: rgba(255, 255, 255, 0.1);
-  --email-footer: rgba(255, 255, 255, 0.6);
-  --d-input-footer: rgba(255, 255, 255, 0.3);
-  --button-1: rgba(0, 0, 0, 0.3);
-  --shadow-but-modal: rgba(0, 0, 0, 0.15);
-  --card-portfolio-color: rgba(33, 150, 243, 0.9);
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -59,7 +37,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   margin: 0 auto;
 }
 
@@ -71,11 +49,11 @@ h2 {
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
 }
 
 a {
-  color: var(--two-colr);
+  color: #757575;
 }
 
 .container {
@@ -90,11 +68,11 @@ a {
   font-weight: 700;
   letter-spacing: 3%;
   line-height: auto;
-  color: var(--color-b);
+  color: #000000;
 }
 
 .Web {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .logo-nav {
@@ -122,7 +100,7 @@ a {
   font-size: 44px;
   letter-spacing: 6%;
   line-height: 1.3;
-  color: var(--colr);
+  color: #ffffff;
 }
 
 .title-about-us {
@@ -130,7 +108,7 @@ a {
   font-size: 14px;
   letter-spacing: 3%;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   margin-bottom: 10px;
 }
 
@@ -142,7 +120,7 @@ a {
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
 }
 
 .pre-title-wd {
@@ -151,7 +129,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--colr);
+  color: #ffffff;
   text-wrap: nowrap;
 }
 
@@ -163,7 +141,7 @@ a {
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
 }
 
 .pre-title-teamname {
@@ -172,7 +150,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
 }
 
 .title-customers {
@@ -180,7 +158,7 @@ a {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -190,7 +168,7 @@ a {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--colr);
+  color: #ffffff;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -200,12 +178,12 @@ a {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--colr);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .web-foot {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .header {
@@ -235,7 +213,7 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--button-color);
+  color: #2196f3;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -245,7 +223,7 @@ a {
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -265,22 +243,22 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:nth-child(2) a:hover {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .nav-item:nth-child(2) a::after {
-  color: var(--button-color);
+  color: #2196f3;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -306,22 +284,22 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:nth-child(3) a:hover {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .nav-item:nth-child(3) a::after {
-  color: var(--button-color);
+  color: #2196f3;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -351,13 +329,13 @@ a {
 
 .gmail-head > a:hover,
 .gmail-head > a:focus {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .header-icon-envelope {
   width: 16px;
   height: 12px;
-  fill: var(--two-colr);
+  fill: #757575;
   margin-right: 10px;
   margin-left: 0;
   -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -367,7 +345,7 @@ a {
 .header-icon-phone {
   width: 10px;
   height: 16px;
-  fill: var(--two-colr);
+  fill: #757575;
   margin-right: 10px;
   margin-left: 0;
   -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -384,27 +362,27 @@ a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--two-colr);
+  color: #757575;
   border: none;
-  background-color: var(--colr);
+  background-color: #ffffff;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email-phone:hover {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .header-email-phone:hover .header-icon-envelope {
-  fill: var(--button-color);
+  fill: #2196f3;
 }
 
 .header-email-phone:hover .header-icon-phone {
-  fill: var(--button-color);
+  fill: #2196f3;
 }
 
 .line {
-  border: 1px solid var(--border-2);
+  border: 1px solid #ececec;
   height: 0px;
   margin-top: 0;
   margin-bottom: 94px;
@@ -415,7 +393,7 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--button-color);
+  color: #2196f3;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -425,7 +403,7 @@ a {
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -445,22 +423,22 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-p:nth-child(1) a:hover {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .nav-item-p:nth-child(1) a::after {
-  color: var(--button-color);
+  color: #2196f3;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -486,22 +464,22 @@ a {
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: #212121;
   position: relative;
   -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-p:nth-child(3) a:hover {
-  color: var(--button-color);
+  color: #2196f3;
 }
 
 .nav-item-p:nth-child(3) a::after {
-  color: var(--button-color);
+  color: #2196f3;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -544,7 +522,7 @@ a {
   height: 404px;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--border-color);
+  border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -555,8 +533,8 @@ a {
 .project-nav > li:focus {
   -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background: var(--colr);
-  border: 1px solid var(--border-color);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .project-nav > li > div > p {
@@ -567,7 +545,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--two-colr);
+  color: #757575;
 }
 
 .project-nav > li > img {
@@ -584,8 +562,8 @@ a {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--colr);
-  background-color: var(--card-portfolio-color);
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   position: absolute;
   -webkit-transform: translateY(100%);
@@ -618,7 +596,7 @@ a {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var(--colr);
+  background-color: #ffffff;
   position: inherit;
 }
 
@@ -630,7 +608,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--text-color);
+  color: #212121;
 }
 
 .nav-button {
@@ -652,7 +630,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 73px;
@@ -671,7 +649,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 125px;
@@ -690,7 +668,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 112px;
@@ -709,7 +687,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 103px;
@@ -728,7 +706,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 130px;
@@ -745,7 +723,7 @@ a {
 .nav-button > li > button:focus {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  background: var(--button-color);
+  background: #2196f3;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -753,7 +731,7 @@ a {
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--colr);
+  color: #ffffff;
 }
 
 .order-service {
@@ -779,10 +757,10 @@ a {
   font-size: 16px;
   letter-spacing: 6%;
   line-height: 1.8;
-  background-color: var(--button-color);
-  color: var(--colr);
-  -webkit-box-shadow: 0px 3px 5px var(--button-1);
-          box-shadow: 0px 3px 5px var(--button-1);
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
   border: none;
   border-radius: 4px;
 }
@@ -825,7 +803,7 @@ a {
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  background: var(--team-color);
+  background: #f5f4fa;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -841,7 +819,7 @@ a {
   font-size: 14px;
   letter-spacing: 3%;
   line-height: 1.7;
-  color: var(--two-colr);
+  color: #757575;
 }
 
 .what-we-do {
@@ -871,7 +849,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: var(--text-absolute);
+  background: rgba(47, 48, 58, 0.8);
   width: 100%;
   height: 70px;
   padding: 27px 95px;
@@ -883,7 +861,7 @@ a {
   padding-top: 92px;
   padding-bottom: 94px;
   height: 708px;
-  background: var(--team-color);
+  background: #f5f4fa;
 }
 
 .team {
@@ -899,7 +877,7 @@ a {
 .team > li {
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background: var(--colr);
+  background: #ffffff;
   border-radius: 0 0 4px 4px;
 }
 
@@ -929,7 +907,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: auto;
-  color: var(--two-colr);
+  color: #757575;
 }
 
 .social-networks-team {
@@ -969,17 +947,17 @@ a {
 .container-social-networks:hover {
   cursor: pointer;
   border-radius: 100%;
-  background-color: var(--button-color);
+  background-color: #2196f3;
 }
 
 .container-social-networks:hover .social-networks-team-icon {
-  fill: var(--colr);
+  fill: #ffffff;
 }
 
 .social-networks-team-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-feel);
+  fill: #afb1b8;
 }
 
 .regular-customers {
@@ -997,7 +975,7 @@ a {
 }
 
 .customer {
-  border: 1px solid var(--icon-feel);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -1005,7 +983,7 @@ a {
 }
 
 .customer:hover {
-  border: 1px solid var(--button-color);
+  border: 1px solid #2196f3;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -1015,13 +993,13 @@ a {
 .customer-logo {
   width: 106px;
   height: 60px;
-  fill: var(--icon-feel);
+  fill: #afb1b8;
   -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer:hover .customer-logo {
-  fill: var(--button-color);
+  fill: #2196f3;
 }
 
 .footer {
@@ -1032,7 +1010,7 @@ a {
   height: 252px;
   padding: 60px 215px;
   margin-top: 0;
-  background-color: var(--background-color);
+  background-color: #2f303a;
 }
 
 .div-contact-logo {
@@ -1047,7 +1025,7 @@ a {
   letter-spacing: 3%;
   line-height: 1.7;
   letter-spacing: 3%;
-  color: var(--colr);
+  color: #ffffff;
 }
 
 .div-contact-logo .contacts {
@@ -1083,18 +1061,18 @@ a {
 }
 
 .social-networks-footer .container-social-networks {
-  background-color: var(--social-netw-foot);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks-footer .container-social-networks:hover {
-  background-color: var(--button-color);
+  background-color: #2196f3;
 }
 
 .social-networks-footer .social-networks-team-icon {
-  fill: var(--colr);
+  fill: #ffffff;
 }
 
 .newsletter {
@@ -1118,7 +1096,7 @@ a {
 }
 
 .d-inp-footer {
-  border: 1px solid var(--d-input-footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
   height: 50px;
@@ -1136,7 +1114,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
-  color: var(--email-footer);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-subscribe-foot {
@@ -1145,16 +1123,16 @@ a {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  background: var(--button-color);
+  background: #2196f3;
   border: none;
-  -webkit-box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
-          box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: left;
-  color: var(--colr);
+  color: #ffffff;
   padding-left: 28px;
 }
 
@@ -1166,7 +1144,7 @@ a {
 }
 
 .backdrop {
-  background-color: var(--backdrop);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1180,7 +1158,7 @@ a {
 
 .modal {
   position: absolute;
-  background-color: var(--colr);
+  background-color: #ffffff;
   padding: 40px;
   border-radius: 4px;
   width: 528px;
@@ -1216,12 +1194,12 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-color: var(--colr);
-  border: 1px solid var(--button-modal);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .butt-modal:hover use {
-  fill: var(--button-color);
+  fill: #2196f3;
 }
 
 .d-butmodal {
@@ -1236,7 +1214,7 @@ a {
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: #212121;
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -1259,7 +1237,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: var(--two-colr);
+  color: #757575;
   margin-top: 0;
   margin-bottom: 4px;
   margin-bottom: 4px;
@@ -1276,7 +1254,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 40px;
-  border: 1px solid var(--modal-black);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
   height: 40px;
@@ -1290,7 +1268,7 @@ a {
   position: absolute;
   z-index: 2;
   left: 12px;
-  fill: var(--col-b);
+  fill: #000000;
 }
 
 .inp-modal {
@@ -1301,11 +1279,11 @@ a {
 }
 
 .d-input:focus-within {
-  border: 1px solid var(--button-color);
+  border: 1px solid #2196f3;
 }
 
 .d-input:focus-within svg {
-  fill: var(--button-color);
+  fill: #2196f3;
 }
 
 .area-label {
@@ -1314,7 +1292,7 @@ a {
 
 .modal-area {
   display: block;
-  border: 1px solid var(--modal-black);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
   border-radius: 4px;
   margin-top: 0;
@@ -1324,11 +1302,11 @@ a {
   padding: 12px 16px;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: var(--text-area);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-area:focus {
-  border: 1px solid var(--button-color);
+  border: 1px solid #2196f3;
 }
 
 .conditions-full {
@@ -1347,12 +1325,12 @@ a {
 }
 
 .check-modal {
-  accent-color: var(--button-color);
+  accent-color: #2196f3;
 }
 
 .conditions {
-  color: var(--button-color);
-  border-bottom: 1px solid var(--button-color);
+  color: var #2196f3;
+  border-bottom: 1px solid #2196f3;
 }
 
 .butt-conf-modald {
@@ -1373,12 +1351,12 @@ a {
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--colr);
+  color: #ffffff;
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  -webkit-box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
-          box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
-  background: var(--button-color);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
   border: none;
 }

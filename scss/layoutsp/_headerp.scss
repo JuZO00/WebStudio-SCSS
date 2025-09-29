@@ -1,5 +1,5 @@
 .line {
-  border: 1px solid var(--border-2);
+  border: 1px solid $line-potf;
   height: 0px;
   margin-top: 0;
   margin-bottom: 94px;
@@ -9,7 +9,7 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--button-color);
+  color: $button-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -32,19 +32,19 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item-p:nth-child(1) a:hover {
-  color: var(--button-color);
+  color: $button-color;
 }
 .nav-item-p:nth-child(1) a::after {
-  color: var(--button-color);
+  color: $button-color;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -63,19 +63,19 @@
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item-p:nth-child(3) a:hover {
-  color: var(--button-color);
+  color: $button-color;
 }
 .nav-item-p:nth-child(3) a::after {
-  color: var(--button-color);
+  color: $button-color;
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--button-color);
+  background-color: $button-color;
   border-radius: 2px;
   width: 100%;
   height: 4px;

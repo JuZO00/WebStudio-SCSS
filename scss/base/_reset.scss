@@ -31,7 +31,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   margin: 0 auto;
 }
 h2 {
@@ -42,8 +42,8 @@ h2 {
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: $text-color;
 }
 a {
-  color: var(--two-colr);
+  color: $two-colr;
 }

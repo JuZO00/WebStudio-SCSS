@@ -13,15 +13,15 @@
   height: 404px;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--border-color);
+  border: 1px solid $stroke-offerp;
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-nav > li:hover,
 .project-nav > li:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background: var(--colr);
-  border: 1px solid var(--border-color);
+  background: $colr;
+  border: 1px solid $stroke-offerp;
 }
 .project-nav > li > div > p {
   margin-top: 0;
@@ -31,7 +31,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--two-colr);
+  color: $two-colr;
 }
 .project-nav > li > img {
   position: relative;
@@ -46,8 +46,8 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--colr);
-  background-color: var(--card-portfolio-color);
+  color: $colr;
+  background-color: $card-portfolio-color;
   padding: 63px 24px;
   position: absolute;
   transform: translateY(100%);
@@ -65,7 +65,7 @@
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var(--colr);
+  background-color: $colr;
   position: inherit;
 }
 .pretitle-offer {
@@ -76,5 +76,5 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--text-color);
+  color: $text-color;
 }

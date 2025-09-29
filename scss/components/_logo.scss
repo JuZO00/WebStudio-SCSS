@@ -4,10 +4,10 @@
   font-weight: 700;
   letter-spacing: 3%;
   line-height: auto;
-  color: var(--color-b);
+  color: $col-b;
 }
 .Web {
-  color: var(--button-color);
+  color: $button-color;
 }
 .logo-nav {
   display: flex;

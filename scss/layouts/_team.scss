@@ -4,7 +4,7 @@
   padding-top: 92px;
   padding-bottom: 94px;
   height: 708px;
-  background: var(--team-color);
+  background: $team-color;
 }
 .team {
   display: flex;
@@ -14,7 +14,7 @@
 .team > li {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background: var(--colr);
+  background: $colr;
   border-radius: 0 0 4px 4px;
 }
 .div-team-name {
@@ -32,7 +32,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: auto;
-  color: var(--two-colr);
+  color: $two-colr;
 }
 .social-networks-team {
   display: flex;
@@ -56,13 +56,13 @@
 .container-social-networks:hover {
   cursor: pointer;
   border-radius: 100%;
-  background-color: var(--button-color);
+  background-color: $button-color;
 }
 .container-social-networks:hover .social-networks-team-icon {
-  fill: var(--colr);
+  fill: $colr;
 }
 .social-networks-team-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-feel);
+  fill: $icon-feel;
 }

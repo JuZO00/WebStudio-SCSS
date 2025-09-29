@@ -8,14 +8,14 @@
   font-size: 44px;
   letter-spacing: 6%;
   line-height: 1.3;
-  color: var(--colr);
+  color: $colr;
 }
 .title-about-us {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 3%;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
   margin-bottom: 10px;
 }
 .title-what-wd {
@@ -26,7 +26,7 @@
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: $text-color;
 }
 .pre-title-wd {
   font-weight: 700;
@@ -34,7 +34,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--colr);
+  color: $colr;
   text-wrap: nowrap;
 }
 .title-team {
@@ -45,7 +45,7 @@
   letter-spacing: 3%;
   line-height: auto;
   text-align: center;
-  color: var(--text-color);
+  color: $text-color;
 }
 .pre-title-teamname {
   margin-top: 0;
@@ -53,14 +53,14 @@
   font-weight: 500;
   font-size: 16px;
   line-height: auto;
-  color: var(--text-color);
+  color: $text-color;
 }
 .title-customers {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
+  color: $text-color;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -69,7 +69,7 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--colr);
+  color: $colr;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -78,9 +78,9 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--colr);
+  color: $colr;
   margin-bottom: 20px;
 }
 .web-foot {
-  color: var(--button-color);
+  color: $button-color;
 }
