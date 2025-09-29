@@ -403,12 +403,365 @@ a {
   fill: var(--button-color);
 }
 
+.line {
+  border: 1px solid var(--border-2);
+  height: 0px;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.nav-item-p:nth-child(2) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--button-color);
+  position: relative;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-p:nth-child(2) a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear, -webkit-transform 0.25s linear;
+}
+
+.nav-item-p:nth-child(1) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--text-color);
+  position: relative;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-p:nth-child(1) a:hover {
+  color: var(--button-color);
+}
+
+.nav-item-p:nth-child(1) a::after {
+  color: var(--button-color);
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear, -webkit-transform 0.25s linear;
+}
+
+.nav-item-p:nth-child(1) a:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.nav-item-p:nth-child(3) a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: var(--text-color);
+  position: relative;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-p:nth-child(3) a:hover {
+  color: var(--button-color);
+}
+
+.nav-item-p:nth-child(3) a::after {
+  color: var(--button-color);
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, -webkit-transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear;
+  transition: opacity 0.25s linear, transform 0.25s linear, -webkit-transform 0.25s linear;
+}
+
+.nav-item-p:nth-child(3) a:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.all-project {
+  margin-bottom: 94px;
+}
+
+.project-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+.project-nav > li {
+  cursor: pointer;
+  height: 404px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-nav > li:hover,
+.project-nav > li:focus {
+  -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: var(--colr);
+  border: 1px solid var(--border-color);
+}
+
+.project-nav > li > div > p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--two-colr);
+}
+
+.project-nav > li > img {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-card {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--colr);
+  background-color: var(--card-portfolio-color);
+  padding: 63px 24px;
+  position: absolute;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-nav > li:hover .overlay-card,
+.project-nav > li:focus .overlay-card {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.text-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--colr);
+  position: inherit;
+}
+
+.pretitle-offer {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--text-color);
+}
+
+.nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.button1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 73px;
+  height: 38px;
+  padding: 6px 25px 6px 25px;
+  margin: 8px;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 125px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 112px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 103px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  width: 130px;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  margin: 8px;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-button > li > button:hover,
+.nav-button > li > button:focus {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: var(--button-color);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colr);
+}
+
 .order-service {
   height: 600px;
   padding: 200px 452px;
   margin-bottom: 119px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./img/background\ png\ sq.jpg);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/background\ png\ sq.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/background\ png\ sq.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/background\ png\ sq.jpg);
 }
 
 .button-1 {
