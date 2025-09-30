@@ -37,7 +37,7 @@
   color: $colr;
   text-wrap: nowrap;
 }
-.title-team {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -47,7 +47,7 @@
   text-align: center;
   color: $text-color;
 }
-.pre-title-teamname {
+.team__pretitle__name {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -55,7 +55,7 @@
   line-height: auto;
   color: $text-color;
 }
-.title-customers {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -64,7 +64,7 @@
   margin-top: 0;
   margin-bottom: 50px;
 }
-.pre-title-footer {
+.footer__social__pretitle {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -73,16 +73,33 @@
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.logo-foot {
-  font-family: "Raleway", sans-serif;
+.footer__newsletter__pretitle {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 14px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: $colr;
+  margin-top: 0;
   margin-bottom: 20px;
 }
-.web-foot {
-  color: $button-color;
+.footer__newsletter__pretitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $colr;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.projects__pretitle {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: $text-color;
 }
 .modal-title {
   font-weight: 700;

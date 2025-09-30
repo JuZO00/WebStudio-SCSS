@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 519px;
 }
-.header--logo--light {
+.header--logo--dark {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -12,6 +12,18 @@
   line-height: auto;
   color: $col-b;
 }
+.foot--logo--light {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: $colr;
+  margin-bottom: 20px;
+}
 .header__logoWeb {
+  color: $button-color;
+}
+.footer__logoWeb {
   color: $button-color;
 }

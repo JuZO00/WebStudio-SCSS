@@ -23,7 +23,7 @@
   <body>
     <header class="header container">
       <div class="header__nav">
-        <a href="./index.html" class="header--logo--light"
+        <a href="./index.html" class="header--logo--dark"
           ><span class="header__logoWeb">Web</span>Studio</a
         >
         <nav class="navigation">
@@ -34,7 +34,9 @@
             <li class="navigation__item__portfolio">
               <a href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="navigation__item__portfolio"><a href="#footer">Контакти</a></li>
+            <li class="navigation__item__portfolio">
+              <a href="#footer">Контакти</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -59,250 +61,237 @@
     </header>
     <div class="line"></div>
     <main>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <div class="d-butmodal">
-            <button type="button" class="butt-modal" data-modal-close>
-              <svg
-                style="width: 11px; height: 11px; fill: #000"
-                class="svg-modal"
-              >
-                <use href="./img/modal/symbol-defs.svg#icon-Vector"></use>
-              </svg>
-            </button>
-          </div>
-          <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
-          <form action="" class="form-modal">
-            <label for="" class="modal-label">Ім'я</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
-                <use href="./img/modal/symbol-defs.svg#icon-people"></use>
-              </svg>
-              <input type="name" required class="inp-modal inp-style" />
-            </div>
-            <label for="" class="modal-label">Телефон</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
-                <use href="./img/modal/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              <input type="name" required class="inp-modal" />
-            </div>
-            <label for="" class="modal-label">Пошта</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
-                <use href="./img/modal/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              <input type="email" required class="inp-modal inp-style" />
-            </div>
-            <label for="" class="area-label">Коментар</label
-            ><textarea
-              name=""
-              id=""
-              class="modal-area"
-              placeholder="Введіть текст"
-            ></textarea>
-            <div class="conditions-full">
-              <input type="checkbox" required class="check-modal" />
-              <p>
-                Погоджуюся з розсилкою та приймаю
-                <span><a href="" class="conditions">Умови договору</a></span>
-              </p>
-            </div>
-            <div class="butt-conf-modald">
-              <button class="confirm-modal" type="button">Відправити</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="div-button container">
-        <ul class="nav-button">
-          <li>
-            <button type="button" class="button1">Усі</button>
+      <div class="navbutton container">
+        <ul class="navbutton__list">
+          <li class="navbutton__item">
+            <button type="button" class="navbutton__button1">Усі</button>
           </li>
-          <li>
-            <button type="button" class="button2">Веб-сайти</button>
+          <li class="navbutton__item">
+            <button type="button" class="navbutton__button2">Веб-сайти</button>
           </li>
-          <li>
-            <button type="button" class="button3">Додатки</button>
+          <li class="navbutton__item">
+            <button type="button" class="navbutton__button3">Додатки</button>
           </li>
-          <li>
-            <button type="button" class="button4">Дизайн</button>
+          <li class="navbutton__item">
+            <button type="button" class="navbutton__button4">Дизайн</button>
           </li>
-          <li>
-            <button type="button" class="button5">Маркетинг</button>
+          <li class="navbutton__item">
+            <button type="button" class="navbutton__button5">Маркетинг</button>
           </li>
         </ul>
       </div>
-      <section class="all-project container">
-        <ul class="project-nav container">
-          <li>
-            <img src="./imgp/imgsq.jpg" alt="Технокряк" />
-            <p class="overlay-card">
+      <section class="projects container">
+        <ul class="projects__list container">
+          <li class="projects__item">
+            <img src="./imgp/imgsq.jpg" alt="Технокряк" class="projects__img" />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
-            <div class="text-project">
-              <h4 class="pretitle-offer">Технокряк</h4>
-              <p>Веб-сайт</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Технокряк</h4>
+              <p class="projects__text">Веб-сайт</p>
             </div>
           </li>
-          <li>
+          <li class="projects__item">
             <img
               src="./imgp/img-1sq.jpg"
               alt="Постер New Orlean vs Golden Star"
+              class="projects__img"
             />
-            <p class="overlay-card">
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Постер New Orlean vs Golden Star</h4>
-              <p>Дизайн</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Постер New Orlean vs Golden Star</h4>
+              <p class="projects__text">Дизайн</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-2sq.jpg" alt="Ресторан Seafood" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-2sq.jpg"
+              alt="Ресторан Seafood"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Ресторан Seafood</h4>
-              <p>Додаток</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Ресторан Seafood</h4>
+              <p class="projects__text">Додаток</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-3sq.jpg" alt="Проєкт Prime" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-3sq.jpg"
+              alt="Проєкт Prime"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Проєкт Prime</h4>
-              <p>Маркетинг</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Проєкт Prime</h4>
+              <p class="projects__text">Маркетинг</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-4sq.jpg" alt="Проєкт Boxes" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-4sq.jpg"
+              alt="Проєкт Boxes"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Проєкт Boxes</h4>
-              <p>Додаток</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Проєкт Boxes</h4>
+              <p class="projects__text">Додаток</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-5sq.jpg" alt="Inspiration has no Borders" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-5sq.jpg"
+              alt="Inspiration has no Borders"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Inspiration has no Borders</h4>
-              <p>Веб-сайт</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Inspiration has no Borders</h4>
+              <p class="projects__text">Веб-сайт</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-6sq.jpg" alt="Видання Limited Edition" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-6sq.jpg"
+              alt="Видання Limited Edition"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Видання Limited Edition</h4>
-              <p>Дизайн</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Видання Limited Edition</h4>
+              <p class="projects__text">Дизайн</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-7sq.jpg" alt="Проєкт LAB" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-7sq.jpg"
+              alt="Проєкт LAB"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Проєкт LAB</h4>
-              <p>Маркетинг</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Проєкт LAB</h4>
+              <p class="projects__text">Маркетинг</p>
             </div>
           </li>
-          <li>
-            <img src="./imgp/img-8sq.jpg" alt="Growing Business" />
-            <p class="overlay-card">
+          <li class="projects__item">
+            <img
+              src="./imgp/img-8sq.jpg"
+              alt="Growing Business"
+              class="projects__img"
+            />
+            <p class="projects__overlay__text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
               та сервісів. Все це дозволить відвідувачу отримати вичерпні
               відомості про компанію чи приватну особу.
             </p>
 
-            <div class="text-project">
-              <h4 class="pretitle-offer">Growing Business</h4>
-              <p>Додаток</p>
+            <div class="projects__div__text">
+              <h4 class="projects__pretitle">Growing Business</h4>
+              <p class="projects__text">Додаток</p>
             </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer container" id="footer">
-      <div class="div-contact-logo container">
-        <div class="contacts">
-          <a href="./index.html" class="logo-foot"
-            ><span class="web-foot">Web</span>Studio</a
+      <div class="footer__div__contact container">
+        <div class="footer__contacts">
+          <a href="./index.html" class="foot--logo--light"
+            ><span class="footer__logoWeb">Web</span>Studio</a
           >
-          <ul class="contact">
-            <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
-            <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="+380961111111">+38 096 111 11 11</a></li>
+          <ul class="footer__contact__list">
+            <li class="footer__contact__item">
+              <p>м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
+            <li class="footer__contact__item">
+              <a href="info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__contact__item">
+              <a href="+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
-        <div class="social-networks-footer">
-          <h4 class="pre-title-footer">приєднуйтесь</h4>
-          <div class="social-networks-team">
-            <div class="container-social-networks">
-              <svg class="social-networks-team-icon">
+        <div class="footer__div__soc">
+          <h4 class="footer__social__pretitle">приєднуйтесь</h4>
+          <div class="footer__div__social">
+            <div class="footer__container__social">
+              <svg class="footer__social__icon">
                 <use href="./img/our team/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </div>
-            <div class="container-social-networks">
-              <svg class="social-networks-team-icon">
+            <div class="footer__container__social">
+              <svg class="footer__social__icon">
                 <use href="./img/our team/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </div>
-            <div class="container-social-networks">
-              <svg class="social-networks-team-icon">
+            <div class="footer__container__social">
+              <svg class="footer__social__icon">
                 <use href="./img/our team/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </div>
-            <div class="container-social-networks">
-              <svg class="social-networks-team-icon">
+            <div class="footer__container__social">
+              <svg class="footer__social__icon">
                 <use href="./img/our team/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </div>
           </div>
         </div>
-        <div class="newsletter container">
-          <h4 class="pre-title-footer">Підпишіться на розсилку</h4>
-          <div class="d-newsletter-input">
-            <div class="d-inp-footer">
-              <input type="email" placeholder="E-mail" class="input-foot" />
+        <div class="footer__newsletter container">
+          <h4 class="footer__newsletter__pretitle">Підпишіться на розсилку</h4>
+          <div class="footer__div__newsletter">
+            <div class="footer__container__newsletter">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="foot__newsletter__input"
+              />
             </div>
-            <button type="button" class="button-subscribe-foot">
+            <button type="button" class="footer__newsletter__button">
               Підписатися
-              <svg class="svg-but-foot" style="width: 24px; height: 24px">
+              <svg
+                class="footer__newsletter__icon"
+                style="width: 24px; height: 24px"
+              >
                 <use href="./img/icon send.svg"></use>
               </svg>
             </button>

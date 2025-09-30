@@ -1,14 +1,14 @@
-.all-project {
+.projects {
   margin-bottom: 94px;
 }
-.project-nav {
+.projects__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
 }
-.project-nav > li {
+.projects__item {
   cursor: pointer;
   height: 404px;
   position: relative;
@@ -16,14 +16,14 @@
   border: 1px solid $stroke-offerp;
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-nav > li:hover,
-.project-nav > li:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: $colr;
   border: 1px solid $stroke-offerp;
 }
-.project-nav > li > div > p {
+.projects__text {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0px;
@@ -33,11 +33,11 @@
   line-height: 1.8;
   color: $two-colr;
 }
-.project-nav > li > img {
+.projects__img {
   position: relative;
   overflow: hidden;
 }
-.overlay-card {
+.projects__overlay__text {
   top: 0;
   left: 0;
   width: 100%;
@@ -53,11 +53,11 @@
   transform: translateY(100%);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-nav > li:hover .overlay-card,
-.project-nav > li:focus .overlay-card {
+.projects__item:hover .projects__overlay__text,
+.projects__item:focus .projects__overlay__text {
   transform: translateY(0);
 }
-.text-project {
+.projects__div__text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -67,14 +67,4 @@
   padding-bottom: 20px;
   background-color: $colr;
   position: inherit;
-}
-.pretitle-offer {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 4px;
-  margin-left: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: $text-color;
 }

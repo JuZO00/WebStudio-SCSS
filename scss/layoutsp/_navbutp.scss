@@ -1,11 +1,11 @@
-.nav-button {
+.navbutton__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
 }
-.button1 {
+.navbutton__button1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -22,7 +22,7 @@
     background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button2 {
+.navbutton__button2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -39,7 +39,7 @@
     background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button3 {
+.navbutton__button3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -56,7 +56,7 @@
     background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button4 {
+.navbutton__button4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -73,7 +73,7 @@
     background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button5 {
+.navbutton__button5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -90,8 +90,8 @@
     background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-button > li > button:hover,
-.nav-button > li > button:focus {
+.navbutton__item > button:hover,
+.navbutton__item > button:focus {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background: $button-color;

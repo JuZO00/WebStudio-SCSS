@@ -6,10 +6,10 @@
   margin-top: 0;
   background-color: $background-color;
 }
-.div-contact-logo {
+.footer__div__contact {
   display: flex;
 }
-.div-contact-logo p {
+.footer__div__contact p {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 3%;
@@ -17,51 +17,54 @@
   letter-spacing: 3%;
   color: $colr;
 }
-.div-contact-logo .contacts {
+.footer__contacts {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
 }
-.contact {
+.footer__contact__list {
   display: flex;
   flex-direction: column;
   padding: 0px;
   margin-right: 93px;
   gap: 9px;
 }
-.contact > li {
+.footer__contact__item {
   width: 231px;
 }
-.social-networks-footer {
+.footer__div__social {
   margin-right: 93px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
-.social-networks-footer .container-social-networks {
+.footer__container__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $social-netw-foot;
-  border-radius: 50%;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-networks-footer .container-social-networks:hover {
+.footer__container__social:hover {
   background-color: $button-color;
 }
-.social-networks-footer .social-networks-team-icon {
+.footer__social__icon {
+  width: 20px;
+  height: 20px;
   fill: $colr;
 }
-.newsletter {
+.footer__newsletter {
   margin-right: 12px;
 }
-.d-newsletter-input {
+.footer__div__newsletter {
   display: flex;
 }
-.newsletter h4 {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colr;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.d-inp-footer {
+.footer__container__newsletter {
   border: 1px solid $d-input-footer;
   border-radius: 4px;
   width: 358px;
@@ -69,7 +72,7 @@
   padding: 15px 16px;
   margin-right: 12px;
 }
-.input-foot {
+.foot__newsletter__input {
   display: block;
   width: 100%;
   border: none;
@@ -81,7 +84,7 @@
   letter-spacing: 0.03em;
   color: $email-footer;
 }
-.button-subscribe-foot {
+.footer__newsletter__button {
   display: inline-block;
   position: relative;
   border-radius: 4px;
@@ -98,7 +101,7 @@
   color: $colr;
   padding-left: 28px;
 }
-.svg-but-foot {
+.footer__newsletter__icon {
   display: block;
   position: absolute;
   top: 13px;
