@@ -5,11 +5,11 @@
   align-items: center;
   height: 80px;
 }
-.navigation {
+.navigation__list {
   display: flex;
   gap: 50px;
 }
-.nav-item:nth-child(1) a {
+.navigation__item:nth-child(1) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -18,7 +18,7 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item:first-child a::after {
+.navigation__item:first-child a::after {
   content: "";
   position: absolute;
   display: block;
@@ -32,7 +32,7 @@
   transform: scale(1);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item:nth-child(2) a {
+.navigation__item:nth-child(2) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -41,10 +41,10 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item:nth-child(2) a:hover {
+.navigation__item:nth-child(2) a:hover {
   color: $button-color;
 }
-.nav-item:nth-child(2) a::after {
+.navigation__item:nth-child(2) a::after {
   color: $button-color;
   content: "";
   position: absolute;
@@ -59,11 +59,11 @@
   transform: scale(0);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item:nth-child(2) a:hover::after {
+.navigation__item:nth-child(2) a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-.nav-item:nth-child(3) a {
+.navigation__item:nth-child(3) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -72,10 +72,10 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item:nth-child(3) a:hover {
+.navigation__item:nth-child(3) a:hover {
   color: $button-color;
 }
-.nav-item:nth-child(3) a::after {
+.navigation__item:nth-child(3) a::after {
   color: $button-color;
   content: "";
   position: absolute;
@@ -90,19 +90,19 @@
   transform: scale(0);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item:nth-child(3) a:hover::after {
+.navigation__item:nth-child(3) a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-.gmail-number {
+.contacts {
   display: flex;
   gap: 50px;
 }
-.gmail-head > a:hover,
-.gmail-head > a:focus {
+.contacts__a:hover,
+.contacts__a:focus {
   color: $button-color;
 }
-.header-icon-envelope {
+.contacts__icon__email {
   width: 16px;
   height: 12px;
   fill: $two-colr;
@@ -110,7 +110,7 @@
   margin-left: 0;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-icon-phone {
+.contacts__icon__phone {
   width: 10px;
   height: 16px;
   fill: $two-colr;
@@ -118,7 +118,7 @@
   margin-left: 0;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-email-phone {
+.contacts__a {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -129,12 +129,12 @@
   background-color: $colr;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-email-phone:hover {
+.contacts__a:hover {
   color: $button-color;
 }
-.header-email-phone:hover .header-icon-envelope {
+.contacts__a:hover .contacts__icon__email {
   fill: $button-color;
 }
-.header-email-phone:hover .header-icon-phone {
+.contacts__a:hover .contacts__icon__phone {
   fill: $button-color;
 }

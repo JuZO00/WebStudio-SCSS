@@ -1,4 +1,4 @@
-.title {
+.ordering__title {
   display: flex;
   width: 696px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   line-height: 1.3;
   color: $colr;
 }
-.title-about-us {
+.about__title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 3%;
@@ -18,7 +18,7 @@
   color: $text-color;
   margin-bottom: 10px;
 }
-.title-what-wd {
+.work__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -28,7 +28,7 @@
   text-align: center;
   color: $text-color;
 }
-.pre-title-wd {
+.work__pretitle {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -83,4 +83,13 @@
 }
 .web-foot {
   color: $button-color;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $text-color;
+  margin-top: 0;
+  margin-bottom: 12px;
 }

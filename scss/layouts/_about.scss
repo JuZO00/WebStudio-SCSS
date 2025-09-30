@@ -1,8 +1,8 @@
-.about-us-sec {
+.about {
   margin-top: 0;
   margin-bottom: 94px;
 }
-.list {
+.about__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -10,13 +10,13 @@
   gap: 30px;
   margin-bottom: 94px;
 }
-.li-1 {
+.about__item {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 270px;
 }
-.div-icon-au {
+.about__div {
   padding: 25px 100px;
   border-radius: 4px;
   width: 270px;
@@ -25,11 +25,11 @@
   margin-top: 0;
   margin-bottom: 30px;
 }
-.icon-about-us {
+.about__icon {
   width: 70px;
   height: 70px;
 }
-.about-us-descr p {
+.about__text {
   width: 255px;
   font-weight: 400;
   font-size: 14px;

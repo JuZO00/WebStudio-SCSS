@@ -10,6 +10,14 @@
     visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
 .modal {
   position: absolute;
   background-color: $colr;
@@ -22,15 +30,13 @@
   transform: translate(-50%, -50%);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.modal__close {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
-.no-scroll {
-  overflow: hidden;
-}
-.butt-modal {
+.modal__close__butt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,32 +46,17 @@
   background-color: $colr;
   border: 1px solid $button-modal;
 }
-.butt-modal:hover use {
+.modal__close__butt :hover use {
   fill: $button-color;
 }
-.d-butmodal {
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.title-modal {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: $text-color;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-.form-modal {
+.form {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.form-modal label {
+.form__label {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -74,10 +65,10 @@
   margin-bottom: 4px;
   margin-bottom: 4px;
 }
-.modal-label {
+.form__label {
   display: block;
 }
-.d-input {
+.form__div__input {
   display: block;
   position: relative;
   align-items: center;
@@ -90,29 +81,29 @@
   margin-bottom: 10px;
   padding: 11px 10px 11px 42px;
 }
-.svg-inp {
+.form__div__input:focus-within {
+  border: 1px solid $button-color;
+}
+.form__div__input:focus-within svg {
+  fill: $button-color;
+}
+.form__icon {
   display: block;
   position: absolute;
   z-index: 2;
   left: 12px;
   fill: $col-b;
 }
-.inp-modal {
+.form__input {
   display: block;
   border: none;
   outline: none;
   width: 100%;
 }
-.d-input:focus-within {
-  border: 1px solid $button-color;
-}
-.d-input:focus-within svg {
-  fill: $button-color;
-}
-.area-label {
+.form__label__area {
   display: block;
 }
-.modal-area {
+.form__area {
   display: block;
   border: 1px solid $modal-black;
   outline: none;
@@ -126,10 +117,10 @@
   letter-spacing: 0.01em;
   color: $text-area;
 }
-.modal-area:focus {
+.form__area:focus {
   border: 1px solid $button-color;
 }
-.conditions-full {
+.form__div__conditions {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,19 +128,19 @@
   margin-top: 0;
   margin-bottom: 30px;
 }
-.check-modal {
+.form__check {
   accent-color: $button-color;
 }
-.conditions {
-  color: var$button-color;
+.form__conditions {
+  color: $button-color;
   border-bottom: 1px solid $button-color;
 }
-.butt-conf-modald {
+.form__div__confirm {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.confirm-modal {
+.form__confirm {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;

@@ -22,33 +22,33 @@
   </head>
   <body>
     <header class="header container">
-      <div class="logo-nav">
-        <a href="./index.html" class="logo"
-          ><span class="Web">Web</span>Studio</a
+      <div class="header__nav">
+        <a href="./index.html" class="header--logo--light"
+          ><span class="header__logoWeb">Web</span>Studio</a
         >
-        <nav>
-          <ul class="navigation">
-            <li class="nav-item">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
               <a href="./index.html">Студія</a>
             </li>
-            <li class="nav-item">
+            <li class="navigation__item">
               <a href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item"><a href="#footer">Контакти</a></li>
+            <li class="navigation__item"><a href="#footer">Контакти</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="gmail-number">
-        <li class="gmail-head">
-          <a href="info@devstudio.com" class="header-email-phone">
-            <svg class="header-icon-envelope">
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a href="info@devstudio.com" class="contacts__a">
+            <svg class="contacts__icon__email">
               <use href="./img/header/symbol-defs.svg#icon-envelope"></use></svg
             >info@devstudio.com
           </a>
         </li>
-        <li>
-          <a href="+380961111111" class="header-email-phone"
-            ><svg class="header-icon-phone">
+        <li class="contacts__item">
+          <a href="+380961111111" class="contacts__a"
+            ><svg class="contacts__icon__phone">
               <use
                 href="./img/header/symbol-defs.svg#icon-smartphone"
               ></use></svg
@@ -60,8 +60,8 @@
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <div class="d-butmodal">
-            <button type="button" class="butt-modal" data-modal-close>
+          <div class="modal__close">
+            <button type="button" class="modal__close__butt" data-modal-close>
               <svg
                 style="width: 11px; height: 11px; fill: #000"
                 class="svg-modal"
@@ -70,109 +70,111 @@
               </svg>
             </button>
           </div>
-          <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
-          <form action="" class="form-modal">
-            <label for="" class="modal-label">Ім'я</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form action="" class="form">
+            <label for="" class="form__label">Ім'я</label>
+            <div class="form__div__input">
+              <svg style="width: 15px; height: 15px" class="form__icon">
                 <use href="./img/modal/symbol-defs.svg#icon-people"></use>
               </svg>
-              <input type="name" required class="inp-modal inp-style" />
+              <input type="name" required class="form__input" />
             </div>
-            <label for="" class="modal-label">Телефон</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
+            <label for="" class="form__label">Телефон</label>
+            <div class="form__div__input">
+              <svg style="width: 15px; height: 15px" class="form__icon">
                 <use href="./img/modal/symbol-defs.svg#icon-phone"></use>
               </svg>
-              <input type="name" required class="inp-modal" />
+              <input type="name" required class="form__input" />
             </div>
-            <label for="" class="modal-label">Пошта</label>
-            <div class="d-input">
-              <svg style="width: 15px; height: 15px" class="svg-inp">
+            <label for="" class="form__label">Пошта</label>
+            <div class="form__div__input">
+              <svg style="width: 15px; height: 15px" class="form__icon">
                 <use href="./img/modal/symbol-defs.svg#icon-mail"></use>
               </svg>
-              <input type="email" required class="inp-modal inp-style" />
+              <input type="email" required class="form__input" />
             </div>
-            <label for="" class="area-label">Коментар</label
+            <label for="" class="form__label__area">Коментар</label
             ><textarea
               name=""
               id=""
-              class="modal-area"
+              class="form__area"
               placeholder="Введіть текст"
             ></textarea>
-            <div class="conditions-full">
-              <input type="checkbox" required class="check-modal" />
+            <div class="form__div__conditions">
+              <input type="checkbox" required class="form__check" />
               <p>
                 Погоджуюся з розсилкою та приймаю
-                <span><a href="" class="conditions">Умови договору</a></span>
+                <span
+                  ><a href="" class="form__conditions">Умови договору</a></span
+                >
               </p>
             </div>
-            <div class="butt-conf-modald">
-              <button class="confirm-modal" type="button">Відправити</button>
+            <div class="form__div__confirm">
+              <button class="form__confirm" type="button">Відправити</button>
             </div>
           </form>
         </div>
       </div>
-      <section class="order-service">
-        <h1 class="title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="button-1" data-modal-open>
+      <section class="ordering">
+        <h1 class="ordering__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button type="button" class="ordering__button" data-modal-open>
           Замовити послугу
         </button>
       </section>
-      <section class="about-us-sec container">
-        <ul class="list">
-          <li class="li-1">
-            <div class="div-icon-au">
-              <svg class="icon-about-us">
+      <section class="about container">
+        <ul class="about__list">
+          <li class="about__item">
+            <div class="about__div">
+              <svg class="about__icon">
                 <use href="./img/About-team/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-            <div class="about-us-descr">
-              <h3 class="title-about-us">Увага до деталей</h3>
-              <p>
+            <div class="about__div__description">
+              <h3 class="about__title">Увага до деталей</h3>
+              <p class="about__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </div>
           </li>
-          <li class="li-1">
-            <div class="div-icon-au">
-              <svg class="icon-about-us">
+          <li class="about__item">
+            <div class="about__div">
+              <svg class="about__icon">
                 <use href="./img/About-team/symbol-defs.svg#icon-clock"></use>
               </svg>
             </div>
-            <div class="about-us-descr">
-              <h3 class="title-about-us">Пунктуальність</h3>
-              <p>
+            <div class="about__div__description">
+              <h3 class="about__title">Пунктуальність</h3>
+              <p class="about__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </div>
           </li>
-          <li class="li-1">
-            <div class="div-icon-au">
-              <svg class="icon-about-us">
+          <li class="about__item">
+            <div class="about__div">
+              <svg class="about__icon">
                 <use href="./img/About-team/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </div>
-            <div class="about-us-descr">
-              <h3 class="title-about-us">Планування</h3>
-              <p>
+            <div class="about__div__description">
+              <h3 class="about__title">Планування</h3>
+              <p class="about__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </div>
           </li>
-          <li class="li-1">
-            <div class="div-icon-au">
-              <svg class="icon-about-us">
+          <li class="about__item">
+            <div class="about__div">
+              <svg class="about__icon">
                 <use
                   href="./img/About-team/symbol-defs.svg#icon-astronaut"
                 ></use>
               </svg>
             </div>
-            <div class="about-us-descr">
-              <h3 class="title-about-us">Сучасні технології</h3>
-              <p>
+            <div class="about__div__description">
+              <h3 class="about__title">Сучасні технології</h3>
+              <p class="about__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -180,37 +182,37 @@
           </li>
         </ul>
       </section>
-      <section class="what-we-do container">
-        <h2 class="title-what-wd">Чим ми займаємося</h2>
-        <ul class="images">
-          <li class="img-wd-item">
+      <section class="work container">
+        <h2 class="work__title">Чим ми займаємося</h2>
+        <ul class="work__list">
+          <li class="work__item">
             <img
               src="./img/img-work/img (1) sq.jpg"
               alt="Фронтенд"
-              class="img-what-wd"
+              class="work__images"
             />
-            <div class="text-what-wd">
-              <h3 class="pre-title-wd">Десктопні додатки</h3>
+            <div class="work__div__title">
+              <h3 class="work__pretitle">Десктопні додатки</h3>
             </div>
           </li>
-          <li class="img-wd-item">
+          <li class="work__item">
             <img
               src="./img/img-work/img-1 (1) sq.jpg"
               alt="UI/UX Design"
-              class="img-what-wd"
+              class="work__images"
             />
-            <div class="text-what-wd">
-              <h3 class="pre-title-wd">Мобільні додатки</h3>
+            <div class="work__div__title">
+              <h3 class="work__pretitle">Мобільні додатки</h3>
             </div>
           </li>
-          <li class="img-wd-item">
+          <li class="work__item">
             <img
               src="./img/img-work/img-2 (1) sq.jpg"
               alt="Digital design"
-              class="img-what-wd"
+              class="work__images"
             />
-            <div class="text-what-wd">
-              <h3 class="pre-title-wd">Дизайнерські рішення</h3>
+            <div class="work__div__title">
+              <h3 class="work__pretitle">Дизайнерські рішення</h3>
             </div>
           </li>
         </ul>

@@ -1,24 +1,24 @@
-.what-we-do {
+.work {
   margin-top: 0;
   margin-bottom: 188px;
 }
-.images {
+.work__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 188px;
 }
-.img-wd-item {
+.work__item {
   position: relative;
   overflow: hidden;
   height: 294px;
 }
-.text-what-wd {
+.work__div__title {
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  background:$text-absolute;
+  background: $text-absolute;
   width: 100%;
   height: 70px;
   padding: 27px 95px;

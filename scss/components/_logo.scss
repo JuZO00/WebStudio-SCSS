@@ -1,4 +1,10 @@
-.logo {
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+}
+.header--logo--light {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -6,12 +12,6 @@
   line-height: auto;
   color: $col-b;
 }
-.Web {
+.header__logoWeb {
   color: $button-color;
-}
-.logo-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 519px;
 }

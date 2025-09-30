@@ -4,7 +4,7 @@
   margin-top: 0;
   margin-bottom: 94px;
 }
-.nav-item-p:nth-child(2) a {
+.navigation__item__portfolio:nth-child(2) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -13,7 +13,7 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item-p:nth-child(2) a::after {
+.navigation__item__portfolio:nth-child(2) a::after {
   content: "";
   position: absolute;
   display: block;
@@ -27,7 +27,7 @@
   transform: scale(1);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item-p:nth-child(1) a {
+.navigation__item__portfolio:nth-child(1) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -36,10 +36,10 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item-p:nth-child(1) a:hover {
+.navigation__item__portfolio:nth-child(1) a:hover {
   color: $button-color;
 }
-.nav-item-p:nth-child(1) a::after {
+.navigation__item__portfolio:nth-child(1) a::after {
   color: $button-color;
   content: "";
   position: absolute;
@@ -54,11 +54,11 @@
   transform: scale(0);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item-p:nth-child(1) a:hover::after {
+.navigation__item__portfolio:nth-child(1) a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-.nav-item-p:nth-child(3) a {
+.navigation__item__portfolio:nth-child(3) a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -67,10 +67,10 @@
   position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item-p:nth-child(3) a:hover {
+.navigation__item__portfolio:nth-child(3) a:hover {
   color: $button-color;
 }
-.nav-item-p:nth-child(3) a::after {
+.navigation__item__portfolio:nth-child(3) a::after {
   color: $button-color;
   content: "";
   position: absolute;
@@ -85,7 +85,7 @@
   transform: scale(0);
   transition: opacity 0.25s linear, transform 0.25s linear;
 }
-.nav-item-p:nth-child(3) a:hover::after {
+.navigation__item__portfolio:nth-child(3) a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
