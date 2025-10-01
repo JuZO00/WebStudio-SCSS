@@ -48,21 +48,17 @@
     border-radius: 100%;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: none;
     &:hover {
-      cursor: pointer;
-      border-radius: 100%;
       background-color: $button-color;
     }
-  }
-  &__a {
-    display: flex;
   }
   &__social__icon {
     width: 20px;
     height: 20px;
     fill: $icon-feel;
-    &:hover {
-      fill: $colr;
-    }
+  }
+  &__container__social:hover &__social__icon {
+    fill: $colr;
   }
 }
