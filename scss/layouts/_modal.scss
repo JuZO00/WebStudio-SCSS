@@ -29,25 +29,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__close {
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.modal__close__butt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: $colr;
-  border: 1px solid $button-modal;
-}
-.modal__close__butt :hover use {
-  fill: $button-color;
+  &__close {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &__close__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: $colr;
+    border: 1px solid $button-modal;
+    &:hover use {
+      fill: $button-color;
+    }
+  }
 }
 .form {
   display: flex;
@@ -55,102 +55,109 @@
   align-content: center;
   margin-top: 0;
   margin-bottom: 20px;
-}
-.form__label {
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  color: $two-colr;
-  margin-top: 0;
-  margin-bottom: 4px;
-  margin-bottom: 4px;
-}
-.form__label {
-  display: block;
-}
-.form__div__input {
-  display: block;
-  position: relative;
-  align-items: center;
-  height: 40px;
-  border: 1px solid $modal-black;
-  border-radius: 4px;
-  width: 448px;
-  height: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding: 11px 10px 11px 42px;
-}
-.form__div__input:focus-within {
-  border: 1px solid $button-color;
-}
-.form__div__input:focus-within svg {
-  fill: $button-color;
-}
-.form__icon {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  left: 12px;
-  fill: $col-b;
-}
-.form__input {
-  display: block;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-.form__label__area {
-  display: block;
-}
-.form__area {
-  display: block;
-  border: 1px solid $modal-black;
-  outline: none;
-  border-radius: 4px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  height: 120px;
-  resize: none;
-  padding: 12px 16px;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  color: $text-area;
-}
-.form__area:focus {
-  border: 1px solid $button-color;
-}
-.form__div__conditions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-.form__check {
-  accent-color: $button-color;
-}
-.form__conditions {
-  color: $button-color;
-  border-bottom: 1px solid $button-color;
-}
-.form__div__confirm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form__confirm {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $colr;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0 4px 4px 0 $shadow-but-modal;
-  background: $button-color;
-  border: none;
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $two-colr;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-bottom: 4px;
+  }
+  &__label {
+    display: block;
+  }
+  &__div__input {
+    display: block;
+    position: relative;
+    align-items: center;
+    height: 40px;
+    border: 1px solid $modal-black;
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 11px 10px 11px 42px;
+    &:focus-within {
+      border: 1px solid $button-color;
+    }
+    &:focus-within svg {
+      fill: $button-color;
+    }
+  }
+  &__icon {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    fill: $col-b;
+  }
+  &__input {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  &__label__area {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $two-colr;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-bottom: 4px;
+  }
+  &__area {
+    display: block;
+    border: 1px solid $modal-black;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $text-area;
+    &:focus {
+      border: 1px solid $button-color;
+    }
+  }
+  &__div__conditions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &__check {
+    accent-color: $button-color;
+  }
+  &__conditions {
+    color: $button-color;
+    border-bottom: 1px solid $button-color;
+  }
+  &__div__confirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__confirm {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $colr;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 $shadow-but-modal;
+    background: $button-color;
+    border: none;
+  }
 }

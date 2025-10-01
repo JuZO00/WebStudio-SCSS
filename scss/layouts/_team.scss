@@ -5,64 +5,64 @@
   padding-bottom: 94px;
   height: 708px;
   background: $team-color;
-}
-.team__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.team__item {
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background: $colr;
-  border-radius: 0 0 4px 4px;
-}
-.team__div__name {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 16px;
-}
-.team__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: auto;
-  color: $two-colr;
-}
-.team__div__social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-.team__container__social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 100%;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__a {
-  display: flex;
-}
-.team__container__social:hover {
-  cursor: pointer;
-  border-radius: 100%;
-  background-color: $button-color;
-}
-.team__container__social:hover .team__social__icon {
-  fill: $colr;
-}
-.team__social__icon {
-  width: 20px;
-  height: 20px;
-  fill: $icon-feel;
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__item {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background: $colr;
+    border-radius: 0 0 4px 4px;
+  }
+  &__div__name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: auto;
+    color: $two-colr;
+  }
+  &__div__social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__container__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      cursor: pointer;
+      border-radius: 100%;
+      background-color: $button-color;
+    }
+  }
+  &__a {
+    display: flex;
+  }
+  &__social__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-feel;
+    &:hover {
+      fill: $colr;
+    }
+  }
 }

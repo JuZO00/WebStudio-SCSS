@@ -1,31 +1,31 @@
 .customers {
   margin-top: 0;
   margin-bottom: 94px;
-}
-.customers__div {
-  display: flex;
-  justify-content: space-between;
-}
-.customers__div__list {
-  border: 1px solid $icon-feel;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-}
-.customers__div__list:hover {
-  border: 1px solid $button-color;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  cursor: pointer;
-}
-.customers__icon {
-  width: 106px;
-  height: 60px;
-  fill: $icon-feel;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.customers__div__list:hover .customers__icon {
-  fill: $button-color;
+  &__div {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__div__list {
+    border: 1px solid $icon-feel;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    &:hover {
+      border: 1px solid $button-color;
+      border-radius: 4px;
+      width: 170px;
+      height: 92px;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: $icon-feel;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__div__list:hover &__icon {
+    fill: $button-color;
+  }
 }

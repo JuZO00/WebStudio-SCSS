@@ -61,7 +61,7 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <div class="modal__close">
-            <button type="button" class="modal__close__butt" data-modal-close>
+            <button type="button" class="modal__close__button" data-modal-close>
               <svg
                 style="width: 11px; height: 11px; fill: #000"
                 class="svg-modal"
@@ -469,9 +469,15 @@
             ><span class="footer__logoWeb">Web</span>Studio</a
           >
           <ul class="footer__contact__list">
-            <li class="footer__contact__item"><p>м. Київ, пр-т Лесі Українки, 26</p></li>
-            <li class="footer__contact__item"><a href="info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer__contact__item"><a href="+380961111111">+38 096 111 11 11</a></li>
+            <li class="footer__contact__item">
+              <p>м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
+            <li class="footer__contact__item">
+              <a href="info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__contact__item">
+              <a href="+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
         <div class="footer__div__soc">
@@ -503,11 +509,18 @@
           <h4 class="footer__newsletter__pretitle">Підпишіться на розсилку</h4>
           <div class="footer__div__newsletter">
             <div class="footer__container__newsletter">
-              <input type="email" placeholder="E-mail" class="foot__newsletter__input" />
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="footer__newsletter__input"
+              />
             </div>
             <button type="button" class="footer__newsletter__button">
               Підписатися
-              <svg class="footer__newsletter__icon" style="width: 24px; height: 24px">
+              <svg
+                class="footer__newsletter__icon"
+                style="width: 24px; height: 24px"
+              >
                 <use href="./img/icon send.svg"></use>
               </svg>
             </button>

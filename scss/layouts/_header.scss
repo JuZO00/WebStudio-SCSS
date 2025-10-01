@@ -5,136 +5,134 @@
   align-items: center;
   height: 80px;
 }
-.navigation__list {
-  display: flex;
-  gap: 50px;
-}
-.navigation__item:nth-child(1) a {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2%;
-  line-height: auto;
-  color: $button-color;
-  position: relative;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__item:first-child a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: $button-color;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -32px;
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.25s linear, transform 0.25s linear;
-}
-.navigation__item:nth-child(2) a {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2%;
-  line-height: auto;
-  color: $text-color;
-  position: relative;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__item:nth-child(2) a:hover {
-  color: $button-color;
-}
-.navigation__item:nth-child(2) a::after {
-  color: $button-color;
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: $button-color;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -32px;
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 0.25s linear, transform 0.25s linear;
-}
-.navigation__item:nth-child(2) a:hover::after {
-  opacity: 1;
-  transform: scale(1);
-}
-.navigation__item:nth-child(3) a {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2%;
-  line-height: auto;
-  color: $text-color;
-  position: relative;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__item:nth-child(3) a:hover {
-  color: $button-color;
-}
-.navigation__item:nth-child(3) a::after {
-  color: $button-color;
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: $button-color;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -32px;
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 0.25s linear, transform 0.25s linear;
-}
-.navigation__item:nth-child(3) a:hover::after {
-  opacity: 1;
-  transform: scale(1);
+.navigation {
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+  &__item:nth-child(1) a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: auto;
+    color: $button-color;
+    position: relative;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $button-color;
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -32px;
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 0.25s linear, transform 0.25s linear;
+    }
+  }
+  &__item:nth-child(2) a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: auto;
+    color: $text-color;
+    position: relative;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $button-color;
+    }
+    &::after {
+      color: $button-color;
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $button-color;
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -32px;
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.25s linear, transform 0.25s linear;
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  &__item:nth-child(3) a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: auto;
+    color: $text-color;
+    position: relative;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $button-color;
+    }
+    &::after {
+      color: $button-color;
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $button-color;
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -32px;
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.25s linear, transform 0.25s linear;
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 .contacts {
   display: flex;
   gap: 50px;
-}
-.contacts__a:hover,
-.contacts__a:focus {
-  color: $button-color;
-}
-.contacts__icon__email {
-  width: 16px;
-  height: 12px;
-  fill: $two-colr;
-  margin-right: 10px;
-  margin-left: 0;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__icon__phone {
-  width: 10px;
-  height: 16px;
-  fill: $two-colr;
-  margin-right: 10px;
-  margin-left: 0;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__a {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: $two-colr;
-  border: none;
-  background-color: $colr;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__a:hover {
-  color: $button-color;
-}
-.contacts__a:hover .contacts__icon__email {
-  fill: $button-color;
-}
-.contacts__a:hover .contacts__icon__phone {
-  fill: $button-color;
+  &__a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $two-colr;
+    border: none;
+    background-color: $colr;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $button-color;
+    }
+  }
+  &__icon__email {
+    width: 16px;
+    height: 12px;
+    fill: $two-colr;
+    margin-right: 10px;
+    margin-left: 0;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__a:hover &__icon__email {
+    fill: $button-color;
+  }
+  &__icon__phone {
+    width: 10px;
+    height: 16px;
+    fill: $two-colr;
+    margin-right: 10px;
+    margin-left: 0;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__a:hover &__icon__phone {
+    fill: $button-color;
+  }
 }
