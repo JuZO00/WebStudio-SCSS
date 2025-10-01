@@ -2,16 +2,15 @@
   margin-top: 0;
   margin-bottom: 94px;
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
+    align-items: flex-start;
     flex-wrap: nowrap;
     margin: 0 auto;
     gap: 30px;
     margin-bottom: 94px;
   }
   &__item {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     flex-direction: column;
     width: 270px;
   }
@@ -30,7 +29,7 @@
   }
   &__text {
     width: 255px;
-    font-weight: 400;
+    font-weight: $font-weight4;
     font-size: 14px;
     letter-spacing: 3%;
     line-height: 1.7;

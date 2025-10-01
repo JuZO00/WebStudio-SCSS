@@ -2,6 +2,7 @@
   background-color: $backdrop;
   width: 100vw;
   height: 100vh;
+  @extend %block;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +20,7 @@
   overflow: hidden;
 }
 .modal {
-  position: absolute;
+  @extend %block;
   background-color: $colr;
   padding: 40px;
   border-radius: 4px;
@@ -30,14 +31,12 @@
   transform: translate(-50%, -50%);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   &__close {
-    display: block;
-    position: absolute;
+    @extend %block;
     top: 8px;
     right: 8px;
   }
   &__close__button {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     justify-content: center;
     width: 30px;
     height: 30px;
@@ -50,13 +49,14 @@
   }
 }
 .form {
-  display: flex;
+  @extend %flex;
+  align-items: stretch;
   flex-direction: column;
   align-content: center;
   margin-top: 0;
   margin-bottom: 20px;
   &__label {
-    font-weight: 400;
+    font-weight: $font-weight4;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: $two-colr;
@@ -65,12 +65,12 @@
     margin-bottom: 4px;
   }
   &__label {
-    display: block;
+    @extend %block;
+    position: inherit;
   }
   &__div__input {
-    display: block;
+    @extend %block;
     position: relative;
-    align-items: center;
     height: 40px;
     border: 1px solid $modal-black;
     border-radius: 4px;
@@ -87,21 +87,22 @@
     }
   }
   &__icon {
-    display: block;
-    position: absolute;
+    @extend %block;
     z-index: 2;
     left: 12px;
     fill: $col-b;
   }
   &__input {
-    display: block;
+    @extend %block;
+    position: inherit;
     border: none;
     outline: none;
     width: 100%;
   }
   &__label__area {
-    display: block;
-    font-weight: 400;
+    @extend %block;
+    position: inherit;
+    font-weight: $font-weight4;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: $two-colr;
@@ -110,7 +111,8 @@
     margin-bottom: 4px;
   }
   &__area {
-    display: block;
+    @extend %block;
+    position: inherit;
     border: 1px solid $modal-black;
     outline: none;
     border-radius: 4px;
@@ -127,9 +129,8 @@
     }
   }
   &__div__conditions {
-    display: flex;
+    @extend %flex;
     justify-content: center;
-    align-items: center;
     gap: 8px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -142,12 +143,11 @@
     border-bottom: 1px solid $button-color;
   }
   &__div__confirm {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     justify-content: center;
   }
   &__confirm {
-    font-weight: 700;
+    font-weight: $font-weight7;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;

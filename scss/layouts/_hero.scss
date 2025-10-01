@@ -9,13 +9,13 @@
     ),
     url(../../img/background\ png\ sq.jpg);
   &__button {
-    display: flex;
+    @extend %flex;
     justify-content: center;
     height: 50px;
     width: 216px;
     padding: 10px 32px;
     margin: 0 auto;
-    font-weight: 700;
+    font-weight: $font-weight7;
     font-size: 16px;
     letter-spacing: 6%;
     line-height: 1.8;

@@ -1,13 +1,13 @@
 .navbutton {
   &__list {
-    display: flex;
+    @extend %flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
   }
   &__button1 {
-    font-weight: 500;
+    font-weight: $font-weight5;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
@@ -27,18 +27,11 @@
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
         0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
       background: $button-color;
-      border-radius: 4px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 162%;
-      letter-spacing: 0.03em;
-      text-align: center;
       color: $colr;
     }
   }
   &__button2 {
-    font-weight: 500;
+    font-weight: $font-weight5;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
@@ -60,7 +53,7 @@
       background: $button-color;
       border-radius: 4px;
       font-family: "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: $font-weight5;
       font-size: 16px;
       line-height: 162%;
       letter-spacing: 0.03em;
@@ -69,7 +62,7 @@
     }
   }
   &__button3 {
-    font-weight: 500;
+    font-weight: $font-weight5;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
@@ -91,7 +84,7 @@
       background: $button-color;
       border-radius: 4px;
       font-family: "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: $font-weight5;
       font-size: 16px;
       line-height: 162%;
       letter-spacing: 0.03em;
@@ -100,7 +93,7 @@
     }
   }
   &__button4 {
-    font-weight: 500;
+    font-weight: $font-weight5;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
@@ -122,7 +115,7 @@
       background: $button-color;
       border-radius: 4px;
       font-family: "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: $font-weight5;
       font-size: 16px;
       line-height: 162%;
       letter-spacing: 0.03em;
@@ -131,7 +124,7 @@
     }
   }
   &__button5 {
-    font-weight: 500;
+    font-weight: $font-weight5;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
@@ -143,21 +136,13 @@
     height: 38px;
     padding: 6px 22px 6px 22px;
     margin: 8px;
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition, $transition-background, $transition-shadow;
     &:hover,
     &:focus {
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
         0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
       background: $button-color;
       border-radius: 4px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 162%;
-      letter-spacing: 0.03em;
-      text-align: center;
       color: $colr;
     }
   }

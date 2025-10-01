@@ -2,19 +2,18 @@
   margin-top: 0;
   margin-bottom: 188px;
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
     gap: 30px;
     margin-bottom: 188px;
   }
   &__item {
+    @extend %block;
     position: relative;
     overflow: hidden;
     height: 294px;
   }
   &__div__title {
-    display: block;
-    position: absolute;
+    @extend %block;
     bottom: 0;
     left: 0;
     background: $text-absolute;

@@ -1,24 +1,14 @@
 .header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %flex;
   width: 519px;
 }
 .header--logo--dark {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 3%;
-  line-height: auto;
+  @extend %logo;
   color: $col-b;
+  margin-bottom: 0;
 }
 .foot--logo--light {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 3%;
-  line-height: auto;
-  color: $colr;
+  @extend %logo;
   margin-bottom: 20px;
 }
 .header__logoWeb {

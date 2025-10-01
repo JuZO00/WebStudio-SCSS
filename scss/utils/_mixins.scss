@@ -1,0 +1,56 @@
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%block {
+  display: block;
+  position: absolute;
+  align-items: center;
+}
+%logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: $colr;
+  margin-bottom: 20px;
+}
+%footer_pretitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $colr;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+%work_team_title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: $font-weight7;
+  font-size: 36px;
+  letter-spacing: 3%;
+  line-height: auto;
+  text-align: center;
+  color: $text-color;
+}
+%header_nav_text {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: auto;
+  color: $button-color;
+}
+%header_nav_after {
+  background-color: $button-color;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.25s linear, transform 0.25s linear;
+}

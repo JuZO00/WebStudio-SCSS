@@ -1,15 +1,16 @@
 .footer {
-  display: flex;
+  @extend %flex;
   width: 100%;
   height: 252px;
   padding: 60px 215px;
   margin-top: 0;
   background-color: $background-color;
   &__div__contact {
-    display: flex;
+    @extend %flex;
+    align-items: flex-start;
   }
   &__div__contact p {
-    font-weight: 400;
+    font-weight: $font-weight4;
     font-size: 14px;
     letter-spacing: 3%;
     line-height: 1.7;
@@ -17,12 +18,13 @@
     color: $colr;
   }
   &__contacts {
-    display: flex;
+    @extend %flex;
+    align-items: flex-start;
     flex-direction: column;
     margin-right: 70px;
   }
   &__contact__list {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
     padding: 0px;
     margin-right: 93px;
@@ -33,20 +35,19 @@
   }
   &__div__social {
     margin-right: 93px;
-    display: flex;
+    @extend %flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
   }
   &__container__social {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-background,
+     $transition-icon;
     background-color: $social-netw-foot;
     &:hover {
       background-color: $button-color;
@@ -61,7 +62,7 @@
     margin-right: 12px;
   }
   &__div__newsletter {
-    display: flex;
+    @extend %flex;
   }
   &__container__newsletter {
     border: 1px solid $d-input-footer;
@@ -72,19 +73,20 @@
     margin-right: 12px;
   }
   &__newsletter__input {
-    display: block;
+    @extend %block;
+    position: inherit;
     width: 100%;
     border: none;
     outline: none;
     background: none;
-    font-weight: 400;
+    font-weight: $font-weight4;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
     color: $email-footer;
   }
   &__newsletter__button {
-    display: inline-block;
+    @extend %block;
     position: relative;
     border-radius: 4px;
     width: 200px;
@@ -92,7 +94,7 @@
     background: $button-color;
     border: none;
     box-shadow: 0 4px 4px 0 $shadow-but-modal;
-    font-weight: 700;
+    font-weight: $font-weight7;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
@@ -101,8 +103,7 @@
     padding-left: 28px;
   }
   &__newsletter__icon {
-    display: block;
-    position: absolute;
+    @extend %block;
     top: 13px;
     right: 28px;
   }

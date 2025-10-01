@@ -1,5 +1,5 @@
 .ordering__title {
-  display: flex;
+  @extend %flex;
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -11,7 +11,7 @@
   color: $colr;
 }
 .about__title {
-  font-weight: 700;
+  font-weight: $font-weight7;
   font-size: 14px;
   letter-spacing: 3%;
   line-height: auto;
@@ -19,17 +19,10 @@
   margin-bottom: 10px;
 }
 .work__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 3%;
-  line-height: auto;
-  text-align: center;
-  color: $text-color;
+  @extend %work_team_title;
 }
 .work__pretitle {
-  font-weight: 700;
+  font-weight: $font-weight7;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -38,14 +31,7 @@
   text-wrap: nowrap;
 }
 .team__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 3%;
-  line-height: auto;
-  text-align: center;
-  color: $text-color;
+  @extend %work_team_title;
 }
 .team__pretitle__name {
   margin-top: 0;
@@ -56,7 +42,7 @@
   color: $text-color;
 }
 .customers__title {
-  font-weight: 700;
+  font-weight: $font-weight7;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
@@ -65,44 +51,23 @@
   margin-bottom: 50px;
 }
 .footer__social__pretitle {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colr;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  @extend %footer_pretitle;
 }
 .footer__newsletter__pretitle {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colr;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.footer__newsletter__pretitle {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colr;
-  margin-top: 0;
-  margin-bottom: 20px;
+  @extend %footer_pretitle;
 }
 .projects__pretitle {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 4px;
   margin-left: 0;
-  font-weight: 700;
+  font-weight: $font-weight7;
   font-size: 18px;
   line-height: 2;
   color: $text-color;
 }
 .modal-title {
-  font-weight: 700;
+  font-weight: $font-weight7;
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
