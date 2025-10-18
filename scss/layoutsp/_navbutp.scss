@@ -1,10 +1,14 @@
 .navbutton {
   &__list {
     @extend %flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 8px;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
   &__button1 {
     font-weight: $font-weight5;

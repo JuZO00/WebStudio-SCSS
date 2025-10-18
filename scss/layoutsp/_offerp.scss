@@ -6,10 +6,16 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
   &__item {
     cursor: pointer;
-    height: 404px;
+    width: 100%;
     @extend %block;
     position: relative;
     overflow: hidden;
@@ -21,6 +27,12 @@
         0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
       background: $colr;
       border: 1px solid $stroke-offerp;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
     }
   }
   &__text {
@@ -37,6 +49,13 @@
     @extend %block;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
   &__overlay__text {
     top: 0;

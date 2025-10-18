@@ -10,10 +10,10 @@
 .foot--logo--light {
   @extend %logo;
   font-size: 24px;
+  margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
     @extend %logo;
   }
-  margin-bottom: 20px;
 }
 .header__logoWeb {
   color: $button-color;

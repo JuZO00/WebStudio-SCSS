@@ -440,9 +440,23 @@ a {
   gap: 30px;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .projects__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .projects__item {
   cursor: pointer;
-  height: 404px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border: 1px solid #eeeeee;
@@ -457,6 +471,16 @@ a {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) {
+  .projects__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: 370px;
+  }
+}
 .projects__text {
   margin-top: 0;
   margin-right: 0;
@@ -470,6 +494,17 @@ a {
 .projects__img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .projects__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__img {
+    width: 370px;
+  }
 }
 .projects__overlay__text {
   top: 0;
@@ -512,13 +547,22 @@ a {
 }
 
 .navbutton__list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .navbutton__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .navbutton__button1 {
   font-weight: 500;
@@ -1003,7 +1047,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__contacts {
@@ -1051,7 +1094,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__div__soc {
@@ -1208,14 +1250,20 @@ a {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 4px;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__close {
   top: 8px;

@@ -23,7 +23,6 @@
     @extend %flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
@@ -53,7 +52,6 @@
     @extend %flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }

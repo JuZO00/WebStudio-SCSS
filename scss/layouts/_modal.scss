@@ -24,12 +24,16 @@
   background-color: $colr;
   padding: 40px;
   border-radius: 4px;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 609px;
   transform: translate(-50%, -50%);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   &__close {
     @extend %block;
     top: 8px;
