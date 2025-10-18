@@ -1,15 +1,37 @@
 .footer {
   @extend %flex;
   width: 100%;
-  height: 252px;
-  padding: 60px 215px;
+  padding: 60px 0px;
   margin-top: 0;
   background-color: $background-color;
-  &__div__contact {
+  &__div__container {
     @extend %flex;
-    align-items: flex-start;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
   }
-  &__div__contact p {
+  &__contacts {
+    @extend %flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
+  }
+  &__contacts__text {
     font-weight: $font-weight4;
     font-size: 14px;
     letter-spacing: 3%;
@@ -17,28 +39,33 @@
     letter-spacing: 3%;
     color: $colr;
   }
-  &__contacts {
-    @extend %flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-right: 70px;
-  }
   &__contact__list {
     @extend %flex;
     flex-direction: column;
-    padding: 0px;
-    margin-right: 93px;
+    justify-content: center;
+    width: 195px;
     gap: 9px;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
-  &__contact__item {
-    width: 231px;
+  &__div__soc {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      margin-top: 12px;
+    }
   }
   &__div__social {
-    margin-right: 93px;
     @extend %flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
   }
   &__container__social {
     @extend %flex;
@@ -46,8 +73,7 @@
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    transition: $transition-background,
-     $transition-icon;
+    transition: $transition-background, $transition-icon;
     background-color: $social-netw-foot;
     &:hover {
       background-color: $button-color;
@@ -59,18 +85,33 @@
     fill: $colr;
   }
   &__newsletter {
-    margin-right: 12px;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      margin-top: 12px;
+    }
   }
   &__div__newsletter {
     @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
   &__container__newsletter {
     border: 1px solid $d-input-footer;
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
-    padding: 15px 16px;
-    margin-right: 12px;
+    padding: 16px 15px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &__newsletter__input {
     @extend %block;
@@ -100,7 +141,11 @@
     letter-spacing: 0.06em;
     text-align: left;
     color: $colr;
-    padding-left: 28px;
+    padding: 10px 31px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+      padding: 10px 28px;
+    }
   }
   &__newsletter__icon {
     @extend %block;

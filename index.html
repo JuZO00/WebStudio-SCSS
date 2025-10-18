@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header container">
+    <!--     <header class="header container">
       <div class="header__nav">
         <a href="./index.html" class="header--logo--dark"
           ><span class="header__logoWeb">Web</span>Studio</a
@@ -57,6 +57,7 @@
         </li>
       </ul>
     </header>
+ -->
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -116,12 +117,14 @@
         </div>
       </div>
       <section class="ordering">
-        <h1 class="ordering__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="ordering__button" data-modal-open>
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h1 class="ordering__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <button type="button" class="ordering__button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
       </section>
-      <section class="about container">
+      <section class="container about">
         <ul class="about__list">
           <li class="about__item">
             <div class="about__div">
@@ -129,13 +132,11 @@
                 <use href="./img/About-team/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-            <div class="about__div__description">
-              <h3 class="about__title">Увага до деталей</h3>
-              <p class="about__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </div>
+            <h3 class="about__title">Увага до деталей</h3>
+            <p class="about__text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
           </li>
           <li class="about__item">
             <div class="about__div">
@@ -143,13 +144,11 @@
                 <use href="./img/About-team/symbol-defs.svg#icon-clock"></use>
               </svg>
             </div>
-            <div class="about__div__description">
-              <h3 class="about__title">Пунктуальність</h3>
-              <p class="about__text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </div>
+            <h3 class="about__title">Пунктуальність</h3>
+            <p class="about__text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
           </li>
           <li class="about__item">
             <div class="about__div">
@@ -157,12 +156,10 @@
                 <use href="./img/About-team/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </div>
-            <div class="about__div__description">
-              <h3 class="about__title">Планування</h3>
-              <p class="about__text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </div>
+            <h3 class="about__title">Планування</h3>
+            <p class="about__text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
           </li>
           <li class="about__item">
             <div class="about__div">
@@ -172,13 +169,11 @@
                 ></use>
               </svg>
             </div>
-            <div class="about__div__description">
-              <h3 class="about__title">Сучасні технології</h3>
-              <p class="about__text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </div>
+            <h3 class="about__title">Сучасні технології</h3>
+            <p class="about__text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
           </li>
         </ul>
       </section>
@@ -225,8 +220,7 @@
               <img
                 src="./img/img-people/img (1)sq.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
+                class="team__img"
               />
               <div class="team__div__name">
                 <h4 class="team__pretitle__name">Ігор Дем'яненко</h4>
@@ -267,8 +261,7 @@
               <img
                 src="./img/img-people/img-1sq.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
-                height="260"
+                class="team__img"
               />
               <div class="team__div__name">
                 <h4 class="team__pretitle__name">Ольга Рєпіна</h4>
@@ -309,8 +302,7 @@
               <img
                 src="./img/img-people/img-2 (1)sq.jpg"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
+                class="team__img"
               />
               <div class="team__div__name">
                 <h4 class="team__pretitle__name">Микола Тарасов</h4>
@@ -351,8 +343,7 @@
               <img
                 src="./img/img-people/img-3 (1)sq.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
-                height="260"
+                class="team__img"
               />
               <div class="team__div__name">
                 <h4 class="team__pretitle__name">Михайло Єрмаков</h4>
@@ -445,73 +436,83 @@
           </div>
         </div>
       </section>
+      <footer class="footer" id="footer">
+        <div class="footer__div__container container">
+          <div class="footer__contacts">
+            <a href="./index.html" class="foot--logo--light"
+              ><span class="footer__logoWeb">Web</span>Studio</a
+            >
+            <ul class="footer__contact__list">
+              <li class="footer__contact__item">
+                <p class="footer__contacts__text">
+                  м. Київ, пр-т Лесі Українки, 26
+                </p>
+              </li>
+              <li class="footer__contact__item">
+                <a href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer__contact__item">
+                <a href="+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__div__soc">
+            <h4 class="footer__social__pretitle">приєднуйтесь</h4>
+            <div class="footer__div__social">
+              <div class="footer__container__social">
+                <svg class="footer__social__icon">
+                  <use
+                    href="./img/our team/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </div>
+              <div class="footer__container__social">
+                <svg class="footer__social__icon">
+                  <use href="./img/our team/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="footer__container__social">
+                <svg class="footer__social__icon">
+                  <use
+                    href="./img/our team/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </div>
+              <div class="footer__container__social">
+                <svg class="footer__social__icon">
+                  <use
+                    href="./img/our team/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="footer__newsletter">
+            <h4 class="footer__newsletter__pretitle">
+              Підпишіться на розсилку
+            </h4>
+            <div class="footer__div__newsletter">
+              <div class="footer__container__newsletter">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  class="footer__newsletter__input"
+                />
+              </div>
+              <button type="button" class="footer__newsletter__button">
+                Підписатися
+                <svg
+                  class="footer__newsletter__icon"
+                  style="width: 24px; height: 24px"
+                >
+                  <use href="./img/icon send.svg"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <footer class="footer container" id="footer">
-      <div class="footer__div__contact container">
-        <div class="footer__contacts">
-          <a href="./index.html" class="foot--logo--light"
-            ><span class="footer__logoWeb">Web</span>Studio</a
-          >
-          <ul class="footer__contact__list">
-            <li class="footer__contact__item">
-              <p>м. Київ, пр-т Лесі Українки, 26</p>
-            </li>
-            <li class="footer__contact__item">
-              <a href="info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="footer__contact__item">
-              <a href="+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__div__soc">
-          <h4 class="footer__social__pretitle">приєднуйтесь</h4>
-          <div class="footer__div__social">
-            <div class="footer__container__social">
-              <svg class="footer__social__icon">
-                <use href="./img/our team/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </div>
-            <div class="footer__container__social">
-              <svg class="footer__social__icon">
-                <use href="./img/our team/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </div>
-            <div class="footer__container__social">
-              <svg class="footer__social__icon">
-                <use href="./img/our team/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </div>
-            <div class="footer__container__social">
-              <svg class="footer__social__icon">
-                <use href="./img/our team/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="footer__newsletter container">
-          <h4 class="footer__newsletter__pretitle">Підпишіться на розсилку</h4>
-          <div class="footer__div__newsletter">
-            <div class="footer__container__newsletter">
-              <input
-                type="email"
-                placeholder="E-mail"
-                class="footer__newsletter__input"
-              />
-            </div>
-            <button type="button" class="footer__newsletter__button">
-              Підписатися
-              <svg
-                class="footer__newsletter__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use href="./img/icon send.svg"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./modal.js"></script>
   </body>
+  <script src="./modal.js"></script>
 </html>

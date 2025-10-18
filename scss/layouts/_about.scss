@@ -1,24 +1,42 @@
 .about {
+  margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
   &__list {
     @extend %flex;
+    justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0 auto;
     gap: 30px;
     margin-bottom: 94px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &__item {
     @extend %flex;
     flex-direction: column;
-    width: 270px;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      align-items: flex-start;
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      width: 270px;
+    }
   }
   &__div {
     padding: 25px 100px;
     border-radius: 4px;
-    width: 270px;
-    height: 120px;
     background: $team-color;
     margin-top: 0;
     margin-bottom: 30px;
@@ -28,8 +46,8 @@
     height: 70px;
   }
   &__text {
-    width: 255px;
     font-weight: $font-weight4;
+    text-align: left;
     font-size: 14px;
     letter-spacing: 3%;
     line-height: 1.7;
