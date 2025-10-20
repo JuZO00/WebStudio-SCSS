@@ -16,8 +16,8 @@
     border-radius: 0 0 4px 4px;
   }
   &__img {
-    width: 450px;
-    height: 460px;
+    display: block;
+    width: 100%;
     @media screen and (min-width: 768px) {
       width: 354px;
       height: 340px;

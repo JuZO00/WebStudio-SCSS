@@ -136,24 +136,20 @@ a {
   margin-right: auto;
   width: 100%;
   padding: 0 15px;
-  outline: solid blue;
 }
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    outline: solid rgb(0, 153, 255);
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    outline: solid rgb(174, 0, 255);
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    outline: solid red;
   }
 }
 
@@ -731,8 +727,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 24px;
-  width: 200px;
-  height: 50px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
@@ -884,8 +878,8 @@ a {
   border-radius: 0 0 4px 4px;
 }
 .team__img {
-  width: 450px;
-  height: 460px;
+  display: block;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team__img {
@@ -988,8 +982,20 @@ a {
 .customers__div__list:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .customers__div__list:hover {
+    width: 226px;
+    padding: 16px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__div__list:hover {
+    width: 170px;
+    padding: 16px 32px;
+  }
 }
 .customers__icon {
   width: 106px;
