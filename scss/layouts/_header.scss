@@ -8,40 +8,18 @@
     @extend %flex;
     gap: 50px;
   }
-  &__item:nth-child(1) a {
-    @extend %header_nav_text;
-    @extend %block;
-    position: relative;
-    transition: $transition;
-    &::after {
-      content: "";
-      @extend %block;
-      @extend %header_nav_after;
-    }
-  }
-  &__item:nth-child(2) a {
-    @extend %header_nav_text;
-    color: $text-color;
-    @extend %block;
-    position: relative;
-    transition: $transition;
-    &:hover {
-      color: $button-color;
-    }
+  &__link.navigation__active {
+    color: $button-color;
     &::after {
       color: $button-color;
       content: "";
       @extend %block;
       @extend %header_nav_after;
-      opacity: 0;
-      transform: scale(0);
-    }
-    &:hover::after {
       opacity: 1;
       transform: scale(1);
     }
   }
-  &__item:nth-child(3) a {
+  &__link {
     @extend %header_nav_text;
     color: $text-color;
     @extend %block;
