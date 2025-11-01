@@ -25,24 +25,72 @@
       <div class="header__all container">
         <a href="./index.html" class="header--logo--dark"
           ><span class="header__logoWeb">Web</span>Studio</a
-        ><button class="burger__menu__open" type="button" data-mob-open>
+        ><button class="burger__menu--open" type="button" data-mob-open>
           <svg class="menu__open__svg">
             <use
               href="./img/header/symbol-defs.svg#icon-burger-button-menu"
             ></use>
           </svg>
         </button>
+        <div class="is-hidden burger__mob" data-mob>
+          <div class="container">
+            <button class="burger__menu--close" type="button" data-mob-close>
+              <svg class="menu__close__svg">
+                <use href="./img/header/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="burger__navigation">
+              <ul class="burger__list">
+                <li class="burger__item">
+                  <a href="./index.html" class="burger__link">Студія</a>
+                </li>
+                <li class="burger__item">
+                  <a href="./portfolio.html" class="burger__link">Портфоліо</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#footer" class="burger__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="burger__contacts">
+              <li class="burger__contacts__item">
+                <a href="+380961111111" class="burger__contacts__number"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="burger__contacts__item">
+                <a href="info@devstudio.com" class="burger__contacts__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <nav class="burger__social__navigation">
+              <ul class="burger__social__list">
+                <li class="burger__social__item">
+                  <a href="" class="burger__social__link">Instagram</a>
+                </li>
+                <li class="burger__social__item">
+                  <a href="" class="burger__social__link">Twitter</a>
+                </li>
+                <li class="burger__social__item">
+                  <a href="" class="burger__social__link">Facebook</a>
+                </li>
+                <li class="burger__social__item">
+                  <a href="" class="burger__social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студія</a>
+              <a href="./index.html" class="navigation__link navigation__active"
+                >Студія</a
+              >
             </li>
             <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__active"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
             <li class="navigation__item">
               <a href="#footer" class="navigation__link">Контакти</a>
