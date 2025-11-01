@@ -131,6 +131,10 @@ a {
   color: #757575;
 }
 
+main {
+  z-index: 1;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -1437,6 +1441,7 @@ a {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 3;
 }
 @media screen and (min-width: 768px) {
   .burger__mob {
