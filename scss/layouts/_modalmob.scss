@@ -1,0 +1,106 @@
+.is-hidden {
+  display: none;
+}
+.burger__menu--open {
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 12px 8px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.burger__menu--close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  display: inline-block;
+  padding: 11px 11px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu__close__svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: $text-color;
+  &:hover,
+  &:focus {
+    fill: $button-color;
+  }
+}
+.menu__open__svg {
+  width: 24px;
+  height: 16px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.burger__mob {
+  position: fixed;
+  background-color: $colr;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.burger__navigation {
+  margin-bottom: 306px;
+}
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.burger__link {
+  @extend %header_nav_text;
+  font-size: 40px;
+  color: $col-b;
+  &:hover,
+  &:focus {
+    color: $button-color;
+  }
+}
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.burger__contacts__number {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: $button-color;
+}
+.burger__contacts__email {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: $two-colr;
+  &:hover,
+  &:focus {
+    color: $button-color;
+  }
+}
+.burger__social__list {
+  @extend %flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.burger__social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $button-color;
+}
