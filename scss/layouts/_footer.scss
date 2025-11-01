@@ -88,6 +88,7 @@
     flex-direction: column;
     justify-content: center;
     @media screen and (min-width: 1200px) {
+      width: auto;
       align-items: flex-start;
       margin-top: 12px;
     }
