@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./../img/background@1x.jpg);
+    url(.././img/background@1x.jpg);
   background-position: center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
@@ -17,7 +17,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./../img/background@2x.jpg);
+      url(.././img/background@2x.jpg);
   }
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
