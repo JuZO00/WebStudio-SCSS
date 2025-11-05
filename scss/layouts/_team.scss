@@ -57,6 +57,7 @@
     border-radius: 100%;
     transition: $transition-background, $transition-icon;
     background-color: none;
+    cursor: pointer;
     &:hover {
       background-color: $button-color;
     }
@@ -66,6 +67,7 @@
     height: 20px;
     fill: $icon-feel;
     transition: $transition-icon;
+    cursor: pointer;
   }
   &__container__social:hover &__social__icon {
     fill: $colr;

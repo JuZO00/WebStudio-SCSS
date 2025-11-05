@@ -73,6 +73,7 @@
     border-radius: 100%;
     transition: $transition-background, $transition-icon;
     background-color: $social-netw-foot;
+    cursor: pointer;
     &:hover {
       background-color: $button-color;
     }
@@ -81,6 +82,7 @@
     width: 20px;
     height: 20px;
     fill: $colr;
+    cursor: pointer;
   }
   &__newsletter {
     @extend %flex;
